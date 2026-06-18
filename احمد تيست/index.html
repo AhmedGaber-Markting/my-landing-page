@@ -1,1757 +1,1784 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="أحمد جابر - خبير التسويق الإلكتروني ونمو الأعمال. حلول مبتكرة للشركات في مصر ودول الخليج.">
+    <meta name="description"
+        content="أحمد جابر - خبير التسويق الإلكتروني ونمو الأعمال. حلول مبتكرة للشركات في مصر ودول الخليج.">
     <title>أحمد جابر | خبير التسويق الإلكتروني ونمو الأعمال</title>
-    
+
     <!-- Google Fonts: Amiri for classic Arabic serif headings, Tajawal for clean body text, and Cinzel for English branding -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;600;700;900&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cinzel:wght@400;600;700;900&family=Tajawal:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
     <!-- Stylesheet (inlined) -->
     <style>
-/* ==========================================================================
+        /* ==========================================================================
    1. Design System, Variables & Base Reset
    ========================================================================== */
-:root {
-    /* Color Palette */
-    --bg-primary: #050505;
-    --bg-secondary: #0c0c0c;
-    --bg-card: #121212;
-    --accent-gold: #d4af37;
-    --accent-gold-light: #ffe8a3;
-    --accent-gold-dark: #aa8620;
-    --accent-champagne: #f7e7ce;
-    
-    /* Typography */
-    --text-primary: #ffffff;
-    --text-secondary: #b8b8b8;
-    --text-muted: #707070;
-    
-    /* Fonts */
-    --font-heading: 'Amiri', serif;
-    --font-body: 'Tajawal', sans-serif;
-    --font-english: 'Cinzel', serif;
-    
-    /* Transitions & Shadows */
-    --transition-smooth: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
-    --transition-quick: all 0.2s ease;
-    --shadow-gold: 0 15px 35px rgba(212, 175, 55, 0.08);
-    --shadow-gold-large: 0 30px 60px rgba(212, 175, 55, 0.15);
-    --shadow-dark: 0 20px 40px rgba(0, 0, 0, 0.8);
-    
-    /* Gradients */
-    --gold-gradient: linear-gradient(135deg, var(--accent-gold-light) 0%, var(--accent-gold) 50%, var(--accent-gold-dark) 100%);
-    --dark-gradient: linear-gradient(180deg, #0c0c0c 0%, #050505 100%);
-}
+        :root {
+            /* Color Palette */
+            --bg-primary: #050505;
+            --bg-secondary: #0c0c0c;
+            --bg-card: #121212;
+            --accent-gold: #d4af37;
+            --accent-gold-light: #ffe8a3;
+            --accent-gold-dark: #aa8620;
+            --accent-champagne: #f7e7ce;
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+            /* Typography */
+            --text-primary: #ffffff;
+            --text-secondary: #b8b8b8;
+            --text-muted: #707070;
 
-html {
-    scroll-behavior: smooth;
-    scrollbar-width: thin;
-    scrollbar-color: var(--accent-gold) var(--bg-primary);
-}
+            /* Fonts */
+            --font-heading: 'Amiri', serif;
+            --font-body: 'Tajawal', sans-serif;
+            --font-english: 'Cinzel', serif;
 
-/* Custom Scrollbar for Webkit Browsers */
-::-webkit-scrollbar {
-    width: 8px;
-}
-::-webkit-scrollbar-track {
-    background: var(--bg-primary);
-}
-::-webkit-scrollbar-thumb {
-    background: var(--accent-gold);
-    border-radius: 4px;
-}
-::-webkit-scrollbar-thumb:hover {
-    background: var(--accent-gold-light);
-}
+            /* Transitions & Shadows */
+            --transition-smooth: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            --transition-quick: all 0.2s ease;
+            --shadow-gold: 0 15px 35px rgba(212, 175, 55, 0.08);
+            --shadow-gold-large: 0 30px 60px rgba(212, 175, 55, 0.15);
+            --shadow-dark: 0 20px 40px rgba(0, 0, 0, 0.8);
 
-body {
-    font-family: var(--font-body);
-    background-color: var(--bg-primary);
-    color: var(--text-primary);
-    line-height: 1.8;
-    overflow-x: hidden;
-}
+            /* Gradients */
+            --gold-gradient: linear-gradient(135deg, var(--accent-gold-light) 0%, var(--accent-gold) 50%, var(--accent-gold-dark) 100%);
+            --dark-gradient: linear-gradient(180deg, #0c0c0c 0%, #050505 100%);
+        }
 
-a {
-    text-decoration: none;
-    color: inherit;
-    transition: var(--transition-quick);
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-ul {
-    list-style: none;
-}
+        html {
+            scroll-behavior: smooth;
+            scrollbar-width: thin;
+            scrollbar-color: var(--accent-gold) var(--bg-primary);
+        }
 
-.container {
-    width: 90%;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-    /* Ensure fixed navbar does not cover content */
-    body {
-        padding-top: 70px; /* reduced to improve spacing on small screens */
-    }
+        /* Custom Scrollbar for Webkit Browsers */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
 
-/* Helper for English Fonts */
-.cinzel-text {
-    font-family: var(--font-english);
-    font-weight: 700;
-}
+        ::-webkit-scrollbar-track {
+            background: var(--bg-primary);
+        }
 
-/* Scroll Progress Line */
-.scroll-progress {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 3px;
-    background: var(--gold-gradient);
-    width: 0%;
-    z-index: 10002;
-    transition: width 0.1s ease-out;
-}
+        ::-webkit-scrollbar-thumb {
+            background: var(--accent-gold);
+            border-radius: 4px;
+        }
 
-/* ==========================================================================
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--accent-gold-light);
+        }
+
+        body {
+            font-family: var(--font-body);
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.8;
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition-quick);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Ensure fixed navbar does not cover content */
+        body {
+            padding-top: 70px;
+            /* reduced to improve spacing on small screens */
+        }
+
+        /* Helper for English Fonts */
+        .cinzel-text {
+            font-family: var(--font-english);
+            font-weight: 700;
+        }
+
+        /* Scroll Progress Line */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 3px;
+            background: var(--gold-gradient);
+            width: 0%;
+            z-index: 10002;
+            transition: width 0.1s ease-out;
+        }
+
+        /* ==========================================================================
    2. Typography & Section Header Utilities
    ========================================================================== */
-h1, h2, h3, h4 {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    color: var(--text-primary);
-}
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            color: var(--text-primary);
+        }
 
-.text-gradient {
-    background: var(--gold-gradient);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    display: inline-block;
-}
+        .text-gradient {
+            background: var(--gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: inline-block;
+        }
 
-section {
-    scroll-margin-top: 90px;
-}
+        section {
+            scroll-margin-top: 90px;
+        }
 
-.section {
-    padding: 80px 0; /* reduced global section padding to fix oversized sections */
-    position: relative;
-}
+        .section {
+            padding: 80px 0;
+            /* reduced global section padding to fix oversized sections */
+            position: relative;
+        }
 
-.section-subtitle-tag {
-    font-family: var(--font-body);
-    font-size: 0.9rem;
-    font-weight: 700;
-    color: var(--accent-gold);
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    display: block;
-}
+        .section-subtitle-tag {
+            font-family: var(--font-body);
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: var(--accent-gold);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            display: block;
+        }
 
-.section-header {
-    text-align: center;
-    margin-bottom: 80px;
-}
+        .section-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
 
-.section-title {
-    font-size: 2.8rem;
-    margin-bottom: 20px;
-    color: var(--accent-champagne);
-    line-height: 1.3;
-}
+        .section-title {
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            color: var(--accent-champagne);
+            line-height: 1.3;
+        }
 
-.title-underline {
-    width: 100px;
-    height: 2px;
-    background: var(--gold-gradient);
-    margin: 0 auto;
-    position: relative;
-}
+        .title-underline {
+            width: 100px;
+            height: 2px;
+            background: var(--gold-gradient);
+            margin: 0 auto;
+            position: relative;
+        }
 
-.title-underline::after {
-    content: '';
-    position: absolute;
-    top: -3px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 8px;
-    height: 8px;
-    background-color: var(--accent-gold-light);
-    border-radius: 50%;
-    box-shadow: 0 0 10px var(--accent-gold);
-}
+        .title-underline::after {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 8px;
+            height: 8px;
+            background-color: var(--accent-gold-light);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--accent-gold);
+        }
 
-/* Align Header Left (for grid sections) */
-.section-header-left {
-    margin-bottom: 40px;
-}
+        /* Align Header Left (for grid sections) */
+        .section-header-left {
+            margin-bottom: 40px;
+        }
 
-.title-underline-left {
-    width: 80px;
-    height: 2px;
-    background: var(--gold-gradient);
-    margin-right: 0;
-    position: relative;
-}
+        .title-underline-left {
+            width: 80px;
+            height: 2px;
+            background: var(--gold-gradient);
+            margin-right: 0;
+            position: relative;
+        }
 
-.title-underline-left::after {
-    content: '';
-    position: absolute;
-    top: -3px;
-    right: 30px;
-    width: 8px;
-    height: 8px;
-    background-color: var(--accent-gold-light);
-    border-radius: 50%;
-    box-shadow: 0 0 10px var(--accent-gold);
-}
+        .title-underline-left::after {
+            content: '';
+            position: absolute;
+            top: -3px;
+            right: 30px;
+            width: 8px;
+            height: 8px;
+            background-color: var(--accent-gold-light);
+            border-radius: 50%;
+            box-shadow: 0 0 10px var(--accent-gold);
+        }
 
-/* ==========================================================================
+        /* ==========================================================================
    3. Navigation Navbar (Glassmorphic)
    ========================================================================== */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    padding: 25px 0;
-    transition: var(--transition-smooth);
-    background: transparent;
-}
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 25px 0;
+            transition: var(--transition-smooth);
+            background: transparent;
+        }
 
-.navbar.scrolled {
-    background: rgba(5, 5, 5, 0.85);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    padding: 15px 0;
-    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
-}
+        .navbar.scrolled {
+            background: rgba(5, 5, 5, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.15);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+        }
 
-.nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
-.logo-img {
-    height: 40px;
-    width: auto;
-    object-fit: contain;
-    transition: var(--transition-smooth);
-}
+        .logo-img {
+            height: 40px;
+            width: auto;
+            object-fit: contain;
+            transition: var(--transition-smooth);
+        }
 
-.logo-img:hover {
-    transform: scale(1.03);
-    filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.3));
-}
+        .logo-img:hover {
+            transform: scale(1.03);
+            filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.3));
+        }
 
-.nav-links {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-}
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+        }
 
-.nav-links a {
-    font-size: 1rem;
-    font-weight: 500;
-    color: var(--text-secondary);
-    position: relative;
-    padding: 5px 0;
-}
+        .nav-links a {
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            position: relative;
+            padding: 5px 0;
+        }
 
-.nav-links a:hover,
-.nav-links a.active {
-    color: var(--accent-gold-light);
-}
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: var(--accent-gold-light);
+        }
 
-.nav-links a::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    right: 0;
-    width: 0;
-    height: 2px;
-    background: var(--gold-gradient);
-    transition: var(--transition-smooth);
-}
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            right: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gold-gradient);
+            transition: var(--transition-smooth);
+        }
 
-.nav-links a:hover::after,
-.nav-links a.active::after {
-    width: 100%;
-}
+        .nav-links a:hover::after,
+        .nav-links a.active::after {
+            width: 100%;
+        }
 
-.nav-cta {
-    padding: 10px 25px !important;
-    border: 1px solid var(--accent-gold);
-    border-radius: 40px;
-    color: var(--accent-gold) !important;
-    font-weight: 700 !important;
-    background: rgba(212, 175, 55, 0.02);
-}
+        .nav-cta {
+            padding: 10px 25px !important;
+            border: 1px solid var(--accent-gold);
+            border-radius: 40px;
+            color: var(--accent-gold) !important;
+            font-weight: 700 !important;
+            background: rgba(212, 175, 55, 0.02);
+        }
 
-.nav-cta:hover {
-    background: var(--gold-gradient) !important;
-    color: var(--bg-primary) !important;
-    box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
-    border-color: transparent;
-}
+        .nav-cta:hover {
+            background: var(--gold-gradient) !important;
+            color: var(--bg-primary) !important;
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+            border-color: transparent;
+        }
 
-.nav-cta::after {
-    display: none !important;
-}
+        .nav-cta::after {
+            display: none !important;
+        }
 
-.hamburger {
-    display: none;
-    flex-direction: column;
-    gap: 6px;
-    cursor: pointer;
-    z-index: 1001;
-}
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 6px;
+            cursor: pointer;
+            z-index: 1001;
+        }
 
-.hamburger span {
-    width: 28px;
-    height: 2px;
-    background-color: var(--accent-gold);
-    transition: var(--transition-smooth);
-    border-radius: 2px;
-}
+        .hamburger span {
+            width: 28px;
+            height: 2px;
+            background-color: var(--accent-gold);
+            transition: var(--transition-smooth);
+            border-radius: 2px;
+        }
 
-/* Hamburger Active State */
-.hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(6px, 6px);
-}
+        /* Hamburger Active State */
+        .hamburger.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
 
-.hamburger.active span:nth-child(2) {
-    opacity: 0;
-    transform: translateX(10px);
-}
+        .hamburger.active span:nth-child(2) {
+            opacity: 0;
+            transform: translateX(10px);
+        }
 
-.hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-}
+        .hamburger.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(5px, -5px);
+        }
 
-/* ==========================================================================
+        /* ==========================================================================
    4. Hero Section & Gold Particles
    ========================================================================== */
-.hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
-    background-color: var(--bg-primary);
-    padding: 120px 0 60px 0; /* tightened vertical spacing */
-}
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background-color: var(--bg-primary);
+            padding: 120px 0 60px 0;
+            /* tightened vertical spacing */
+        }
 
-#hero-particles {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    pointer-events: none;
-}
+        #hero-particles {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            pointer-events: none;
+        }
 
-.hero-bg-glow {
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, rgba(212, 175, 55, 0.06) 0%, transparent 70%);
-    z-index: 1;
-    pointer-events: none;
-}
+        .hero-bg-glow {
+            position: absolute;
+            top: 30%;
+            left: 10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.06) 0%, transparent 70%);
+            z-index: 1;
+            pointer-events: none;
+        }
 
-.hero-grid {
-    display: grid;
-        grid-template-columns: minmax(280px, 1.2fr) minmax(220px, 1fr);
-    gap: 60px;
-    align-items: center;
-    position: relative;
-    z-index: 2;
-}
+        .hero-grid {
+            display: grid;
+            grid-template-columns: minmax(280px, 1.2fr) minmax(220px, 1fr);
+            gap: 60px;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
 
-.hero-info {
-    max-width: 650px;
-}
+        .hero-info {
+            max-width: 650px;
+        }
 
-.hero-title {
-    font-size: 3.5rem;
-    line-height: 1.25;
-    margin-bottom: 25px;
-    color: var(--text-primary);
-}
+        .hero-title {
+            font-size: 3.5rem;
+            line-height: 1.25;
+            margin-bottom: 25px;
+            color: var(--text-primary);
+        }
 
-.hero-subtitle {
-    font-size: 1.25rem;
-    color: var(--text-secondary);
-    margin-bottom: 45px;
-    font-weight: 300;
-}
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 45px;
+            font-weight: 300;
+        }
 
-/* Trust Bar inside Hero */
-.trust-bar {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    margin-bottom: 45px;
-}
+        /* Trust Bar inside Hero */
+        .trust-bar {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-bottom: 45px;
+        }
 
-.trust-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(212, 175, 55, 0.1);
-    padding: 15px;
-    border-radius: 12px;
-    transition: var(--transition-smooth);
-}
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(212, 175, 55, 0.1);
+            padding: 15px;
+            border-radius: 12px;
+            transition: var(--transition-smooth);
+        }
 
-.trust-item:hover {
-    border-color: rgba(212, 175, 55, 0.4);
-    background: rgba(212, 175, 55, 0.04);
-    transform: translateY(-3px);
-    box-shadow: var(--shadow-gold);
-}
+        .trust-item:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            background: rgba(212, 175, 55, 0.04);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-gold);
+        }
 
-.trust-icon {
-    font-size: 1.4rem;
-    color: var(--accent-gold);
-    background: rgba(212, 175, 55, 0.1);
-    width: 45px;
-    height: 45px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-}
+        .trust-icon {
+            font-size: 1.4rem;
+            color: var(--accent-gold);
+            background: rgba(212, 175, 55, 0.1);
+            width: 45px;
+            height: 45px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
 
-.trust-text {
-    display: flex;
-    flex-direction: column;
-}
+        .trust-text {
+            display: flex;
+            flex-direction: column;
+        }
 
-.trust-title {
-    font-weight: 700;
-    font-size: 1rem;
-    color: var(--accent-champagne);
-}
+        .trust-title {
+            font-weight: 700;
+            font-size: 1rem;
+            color: var(--accent-champagne);
+        }
 
-.trust-sub {
-    font-size: 0.85rem;
-    color: var(--text-secondary);
-}
+        .trust-sub {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
 
-/* Hero Portrait Layout */
-.hero-visual {
-    display: flex;
-    justify-content: center;
-    position: relative;
-}
+        /* Hero Portrait Layout */
+        .hero-visual {
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
 
-.portrait-container {
-    position: relative;
-    width: 100%;
-    max-width: 420px;
-    aspect-ratio: 4/5;
-    border-radius: 20px;
-    overflow: hidden;
-    border: 1px solid rgba(212, 175, 55, 0.2);
-    box-shadow: var(--shadow-dark), 0 0 50px rgba(212, 175, 55, 0.03);
-}
+        .portrait-container {
+            position: relative;
+            width: 100%;
+            max-width: 420px;
+            aspect-ratio: 4/5;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            box-shadow: var(--shadow-dark), 0 0 50px rgba(212, 175, 55, 0.03);
+        }
 
-.portrait-glow {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 120%;
-    height: 120%;
-    background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
-    z-index: 1;
-    pointer-events: none;
-}
+        .portrait-glow {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 120%;
+            height: 120%;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, transparent 70%);
+            z-index: 1;
+            pointer-events: none;
+        }
 
-.portrait-border {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    border: 1px solid rgba(212, 175, 55, 0.25);
-    border-radius: 12px;
-    z-index: 3;
-    pointer-events: none;
-    transition: var(--transition-smooth);
-}
+        .portrait-border {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            right: 15px;
+            bottom: 15px;
+            border: 1px solid rgba(212, 175, 55, 0.25);
+            border-radius: 12px;
+            z-index: 3;
+            pointer-events: none;
+            transition: var(--transition-smooth);
+        }
 
-.portrait-container:hover .portrait-border {
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    border-color: var(--accent-gold);
-}
+        .portrait-container:hover .portrait-border {
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border-color: var(--accent-gold);
+        }
 
-.portrait-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 2;
-    position: relative;
-    display: block;
-    transition: var(--transition-smooth);
-}
+        .portrait-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 2;
+            position: relative;
+            display: block;
+            transition: var(--transition-smooth);
+        }
 
-.portrait-container:hover .portrait-img {
-    transform: scale(1.04);
-}
+        .portrait-container:hover .portrait-img {
+            transform: scale(1.04);
+        }
 
-/* ==========================================================================
+        /* ==========================================================================
    5. Buttons (Premium Luxury Glow / Shine Effects)
    ========================================================================== */
-.btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    padding: 18px 45px;
-    font-family: var(--font-body);
-    font-size: 1.1rem;
-    font-weight: 700;
-    border-radius: 40px;
-    cursor: pointer;
-    transition: var(--transition-smooth);
-    border: none;
-    position: relative;
-    overflow: hidden;
-}
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            padding: 18px 45px;
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            font-weight: 700;
+            border-radius: 40px;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+            border: none;
+            position: relative;
+            overflow: hidden;
+        }
 
-.btn-primary {
-    background: var(--gold-gradient);
-    color: var(--bg-primary);
-    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
-    z-index: 1;
-}
+        .btn-primary {
+            background: var(--gold-gradient);
+            color: var(--bg-primary);
+            box-shadow: 0 4px 20px rgba(212, 175, 55, 0.25);
+            z-index: 1;
+        }
 
-.btn-primary::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, #ffffff 0%, var(--accent-gold-light) 50%, var(--accent-gold) 100%);
-    opacity: 0;
-    transition: var(--transition-smooth);
-    z-index: -1;
-}
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #ffffff 0%, var(--accent-gold-light) 50%, var(--accent-gold) 100%);
+            opacity: 0;
+            transition: var(--transition-smooth);
+            z-index: -1;
+        }
 
-.btn-primary:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(212, 175, 55, 0.45);
-}
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(212, 175, 55, 0.45);
+        }
 
-.btn-primary:hover::before {
-    opacity: 1;
-}
+        .btn-primary:hover::before {
+            opacity: 1;
+        }
 
-.btn-shine {
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 50%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-    transform: skewX(-25deg);
-    pointer-events: none;
-}
+        .btn-shine {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transform: skewX(-25deg);
+            pointer-events: none;
+        }
 
-.btn:hover .btn-shine {
-    left: 150%;
-    transition: all 1s ease-out;
-}
+        .btn:hover .btn-shine {
+            left: 150%;
+            transition: all 1s ease-out;
+        }
 
-/* ==========================================================================
+        /* ==========================================================================
    6. About Section (Split Grid & Offset Golden Frame)
    ========================================================================== */
-.about {
-    background-color: var(--bg-secondary);
-}
+        .about {
+            background-color: var(--bg-secondary);
+        }
 
-.about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1.2fr;
-    gap: 80px;
-    align-items: center;
-}
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 80px;
+            align-items: center;
+        }
 
-.about-visual {
-    display: flex;
-    justify-content: center;
-}
+        .about-visual {
+            display: flex;
+            justify-content: center;
+        }
 
-.about-portrait-frame {
-    position: relative;
-    width: 100%;
-    max-width: 400px;
-    aspect-ratio: 4/5;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: var(--shadow-dark), 0 0 40px rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-}
+        .about-portrait-frame {
+            position: relative;
+            width: 100%;
+            max-width: 400px;
+            aspect-ratio: 4/5;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: var(--shadow-dark), 0 0 40px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
 
-.about-portrait {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: var(--transition-smooth);
-}
+        .about-portrait {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: var(--transition-smooth);
+        }
 
-.about-portrait-frame:hover .about-portrait {
-    transform: scale(1.05);
-}
+        .about-portrait-frame:hover .about-portrait {
+            transform: scale(1.05);
+        }
 
-.frame-border {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    border: 1.5px solid var(--accent-gold);
-    border-radius: 8px;
-    pointer-events: none;
-    z-index: 3;
-    transition: var(--transition-smooth);
-}
+        .frame-border {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            right: 15px;
+            bottom: 15px;
+            border: 1.5px solid var(--accent-gold);
+            border-radius: 8px;
+            pointer-events: none;
+            z-index: 3;
+            transition: var(--transition-smooth);
+        }
 
-.about-portrait-frame:hover .frame-border {
-    top: 10px;
-    left: 10px;
-    right: 10px;
-    bottom: 10px;
-    border-color: var(--accent-gold-light);
-}
+        .about-portrait-frame:hover .frame-border {
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border-color: var(--accent-gold-light);
+        }
 
-.frame-tag {
-    position: absolute;
-    bottom: 25px;
-    right: 25px;
-    background: rgba(5, 5, 5, 0.9);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    padding: 8px 18px;
-    border: 1px solid rgba(212, 175, 55, 0.3);
-    border-radius: 30px;
-    z-index: 4;
-    font-size: 0.75rem;
-    letter-spacing: 2px;
-    color: var(--accent-gold);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-}
+        .frame-tag {
+            position: absolute;
+            bottom: 25px;
+            right: 25px;
+            background: rgba(5, 5, 5, 0.9);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 8px 18px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 30px;
+            z-index: 4;
+            font-size: 0.75rem;
+            letter-spacing: 2px;
+            color: var(--accent-gold);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
 
-.about-info {
-    text-align: right;
-}
+        .about-info {
+            text-align: right;
+        }
 
-.about-text {
-    font-size: 1.15rem;
-    color: var(--text-secondary);
-    margin-bottom: 20px;
-    font-weight: 300;
-}
+        .about-text {
+            font-size: 1.15rem;
+            color: var(--text-secondary);
+            margin-bottom: 20px;
+            font-weight: 300;
+        }
 
-.about-text.text-quote {
-    font-family: var(--font-heading);
-    font-size: 1.8rem;
-    color: var(--accent-champagne);
-    font-weight: 700;
-    margin-bottom: 25px;
-}
+        .about-text.text-quote {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            color: var(--accent-champagne);
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
 
-/* Luxurious Highlight Block */
-.about-highlight {
-    background: rgba(212, 175, 55, 0.03);
-    border-right: 3px solid var(--accent-gold);
-    padding: 25px 30px;
-    border-radius: 8px 0 0 8px;
-    margin-top: 40px;
-    position: relative;
-    overflow: hidden;
-}
+        /* Luxurious Highlight Block */
+        .about-highlight {
+            background: rgba(212, 175, 55, 0.03);
+            border-right: 3px solid var(--accent-gold);
+            padding: 25px 30px;
+            border-radius: 8px 0 0 8px;
+            margin-top: 40px;
+            position: relative;
+            overflow: hidden;
+        }
 
-.about-highlight::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, rgba(212, 175, 55, 0.02) 0%, transparent 100%);
-    pointer-events: none;
-}
+        .about-highlight::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, rgba(212, 175, 55, 0.02) 0%, transparent 100%);
+            pointer-events: none;
+        }
 
-.highlight-icon {
-    font-size: 1.8rem;
-    color: rgba(212, 175, 55, 0.2);
-    position: absolute;
-    left: 20px;
-    bottom: 10px;
-}
+        .highlight-icon {
+            font-size: 1.8rem;
+            color: rgba(212, 175, 55, 0.2);
+            position: absolute;
+            left: 20px;
+            bottom: 10px;
+        }
 
-.about-highlight p {
-    color: var(--accent-champagne);
-    font-size: 1.15rem;
-    font-weight: 500;
-    line-height: 1.8;
-    position: relative;
-    z-index: 2;
-}
+        .about-highlight p {
+            color: var(--accent-champagne);
+            font-size: 1.15rem;
+            font-weight: 500;
+            line-height: 1.8;
+            position: relative;
+            z-index: 2;
+        }
 
-/* ==========================================================================
+        /* ==========================================================================
    7. Services Section (Glassmorphic Cards)
    ========================================================================== */
-.services {
-    background-color: var(--bg-primary);
-}
+        .services {
+            background-color: var(--bg-primary);
+        }
 
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-}
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
 
-/* Custom layout for 5 cards: center the bottom row items */
-@media (min-width: 992px) {
-    .services-grid {
-        grid-template-columns: repeat(6, 1fr);
-    }
-    .service-card:nth-child(1),
-    .service-card:nth-child(2),
-    .service-card:nth-child(3) {
-        grid-column: span 2;
-    }
-    .service-card:nth-child(4) {
-        grid-column: 2 / span 2;
-    }
-    .service-card:nth-child(5) {
-        grid-column: 4 / span 2;
-    }
-}
+        /* Custom layout for 5 cards: center the bottom row items */
+        @media (min-width: 992px) {
+            .services-grid {
+                grid-template-columns: repeat(6, 1fr);
+            }
 
-.service-card {
-    background: rgba(15, 15, 15, 0.55);
-    border: 1px solid rgba(212, 175, 55, 0.08);
-    padding: 50px 35px;
-    border-radius: 20px;
-    transition: var(--transition-smooth);
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-}
+            .service-card:nth-child(1),
+            .service-card:nth-child(2),
+            .service-card:nth-child(3) {
+                grid-column: span 2;
+            }
 
-.service-card::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 60%);
-    opacity: 0;
-    transition: var(--transition-smooth);
-    pointer-events: none;
-}
+            .service-card:nth-child(4) {
+                grid-column: 2 / span 2;
+            }
 
-.service-card:hover {
-    transform: translateY(-8px);
-    border-color: rgba(212, 175, 55, 0.35);
-    box-shadow: var(--shadow-gold), var(--shadow-dark);
-}
+            .service-card:nth-child(5) {
+                grid-column: 4 / span 2;
+            }
+        }
 
-.service-card:hover::after {
-    opacity: 1;
-}
+        .service-card {
+            background: rgba(15, 15, 15, 0.55);
+            border: 1px solid rgba(212, 175, 55, 0.08);
+            padding: 50px 35px;
+            border-radius: 20px;
+            transition: var(--transition-smooth);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+        }
 
-.card-bg-glow {
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(212, 175, 55, 0.03) 0%, transparent 70%);
-    transition: var(--transition-smooth);
-    pointer-events: none;
-    z-index: 1;
-}
+        .service-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.08) 0%, transparent 60%);
+            opacity: 0;
+            transition: var(--transition-smooth);
+            pointer-events: none;
+        }
 
-.service-card:hover .card-bg-glow {
-    background: radial-gradient(circle, rgba(212, 175, 55, 0.07) 0%, transparent 60%);
-}
+        .service-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(212, 175, 55, 0.35);
+            box-shadow: var(--shadow-gold), var(--shadow-dark);
+        }
 
-.service-icon {
-    font-size: 2.2rem;
-    color: var(--accent-gold);
-    margin-bottom: 18px;
-    background: linear-gradient(135deg, rgba(212, 175, 55, 0.12) 0%, rgba(212, 175, 55, 0.02) 100%);
-    width: 65px;
-    height: 65px;
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgba(212, 175, 55, 0.15);
-    z-index: 2;
-    transition: var(--transition-smooth);
-}
+        .service-card:hover::after {
+            opacity: 1;
+        }
 
-.service-card:hover .service-icon {
-    transform: rotate(5deg) scale(1.05);
-    background: var(--gold-gradient);
-    color: var(--bg-primary);
-    border-color: transparent;
-    box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
-}
+        .card-bg-glow {
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.03) 0%, transparent 70%);
+            transition: var(--transition-smooth);
+            pointer-events: none;
+            z-index: 1;
+        }
 
-/* Removed service placeholder images: using icons only */
+        .service-card:hover .card-bg-glow {
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.07) 0%, transparent 60%);
+        }
 
-.service-card h3 {
-    font-size: 1.45rem;
-    margin-bottom: 15px;
-    color: var(--accent-champagne);
-    z-index: 2;
-}
+        .service-icon {
+            font-size: 2.2rem;
+            color: var(--accent-gold);
+            margin-bottom: 18px;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.12) 0%, rgba(212, 175, 55, 0.02) 100%);
+            width: 65px;
+            height: 65px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            z-index: 2;
+            transition: var(--transition-smooth);
+        }
 
-.service-card p {
-    color: var(--text-secondary);
-    font-size: 1rem;
-    line-height: 1.7;
-    font-weight: 300;
-    z-index: 2;
-    margin-bottom: 20px;
-}
+        .service-card:hover .service-icon {
+            transform: rotate(5deg) scale(1.05);
+            background: var(--gold-gradient);
+            color: var(--bg-primary);
+            border-color: transparent;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+        }
 
-.card-arrow {
-    margin-top: auto;
-    color: var(--accent-gold);
-    font-size: 1.1rem;
-    transition: var(--transition-smooth);
-    transform: translateX(0);
-    z-index: 2;
-}
+        /* Removed service placeholder images: using icons only */
 
-.service-card:hover .card-arrow {
-    transform: translateX(-8px);
-    color: var(--accent-gold-light);
-}
+        .service-card h3 {
+            font-size: 1.45rem;
+            margin-bottom: 15px;
+            color: var(--accent-champagne);
+            z-index: 2;
+        }
 
-/* ==========================================================================
+        .service-card p {
+            color: var(--text-secondary);
+            font-size: 1rem;
+            line-height: 1.7;
+            font-weight: 300;
+            z-index: 2;
+            margin-bottom: 20px;
+        }
+
+        .card-arrow {
+            margin-top: auto;
+            color: var(--accent-gold);
+            font-size: 1.1rem;
+            transition: var(--transition-smooth);
+            transform: translateX(0);
+            z-index: 2;
+        }
+
+        .service-card:hover .card-arrow {
+            transform: translateX(-8px);
+            color: var(--accent-gold-light);
+        }
+
+        /* ==========================================================================
    8. Why Me Section (Modern Grid Layout)
    ========================================================================== */
-.why-me {
-    background-color: var(--bg-secondary);
-}
+        .why-me {
+            background-color: var(--bg-secondary);
+        }
 
-.why-me-container {
-    max-width: 1000px;
-}
+        .why-me-container {
+            max-width: 1000px;
+        }
 
-.why-me-header {
-    text-align: center;
-    margin-bottom: 60px;
-}
+        .why-me-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
 
-.why-me-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-}
+        .why-me-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
 
-.why-card {
-    background: rgba(255, 255, 255, 0.01);
-    border: 1px solid rgba(255, 255, 255, 0.03);
-    border-radius: 16px;
-    padding: 28px;
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    transition: var(--transition-smooth);
-}
+        .why-card {
+            background: rgba(255, 255, 255, 0.01);
+            border: 1px solid rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            padding: 28px;
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            transition: var(--transition-smooth);
+        }
 
-.why-card:hover {
-    background: rgba(212, 175, 55, 0.03);
-    border-color: rgba(212, 175, 55, 0.25);
-    transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-}
+        .why-card:hover {
+            background: rgba(212, 175, 55, 0.03);
+            border-color: rgba(212, 175, 55, 0.25);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        }
 
-.why-icon {
-    background: rgba(212, 175, 55, 0.1);
-    color: var(--accent-gold);
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.95rem;
-    flex-shrink: 0;
-    transition: var(--transition-smooth);
-    border: 1px solid rgba(212, 175, 55, 0.15);
-}
+        .why-icon {
+            background: rgba(212, 175, 55, 0.1);
+            color: var(--accent-gold);
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.95rem;
+            flex-shrink: 0;
+            transition: var(--transition-smooth);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
 
-.why-card:hover .why-icon {
-    background: var(--gold-gradient);
-    color: var(--bg-primary);
-    border-color: transparent;
-    transform: scale(1.08);
-}
+        .why-card:hover .why-icon {
+            background: var(--gold-gradient);
+            color: var(--bg-primary);
+            border-color: transparent;
+            transform: scale(1.08);
+        }
 
-.why-content {
-    display: flex;
-    flex-direction: column;
-}
+        .why-content {
+            display: flex;
+            flex-direction: column;
+        }
 
-.why-content h4 {
-    font-family: var(--font-body);
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--accent-champagne);
-    margin-bottom: 8px;
-}
+        .why-content h4 {
+            font-family: var(--font-body);
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--accent-champagne);
+            margin-bottom: 8px;
+        }
 
-.why-content p {
-    color: var(--text-secondary);
-    font-size: 0.9rem;
-    line-height: 1.6;
-    font-weight: 300;
-}
+        .why-content p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            font-weight: 300;
+        }
 
-/* ==========================================================================
+        /* ==========================================================================
    8b. Portfolio Section (Filter Tabs & Metrics Cards)
    ========================================================================== */
-.portfolio {
-    background-color: var(--bg-primary);
-}
+        .portfolio {
+            background-color: var(--bg-primary);
+        }
 
-.portfolio-filters {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 50px;
-    flex-wrap: wrap;
-}
+        .portfolio-filters {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 50px;
+            flex-wrap: wrap;
+        }
 
-.filter-btn {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(212, 175, 55, 0.15);
-    color: var(--text-secondary);
-    padding: 10px 25px;
-    border-radius: 30px;
-    cursor: pointer;
-    font-family: var(--font-body);
-    font-weight: 500;
-    font-size: 0.95rem;
-    transition: var(--transition-smooth);
-}
+        .filter-btn {
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            color: var(--text-secondary);
+            padding: 10px 25px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-family: var(--font-body);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: var(--transition-smooth);
+        }
 
-.filter-btn:hover {
-    color: var(--accent-gold-light);
-    border-color: rgba(212, 175, 55, 0.45);
-    background: rgba(212, 175, 55, 0.05);
-}
+        .filter-btn:hover {
+            color: var(--accent-gold-light);
+            border-color: rgba(212, 175, 55, 0.45);
+            background: rgba(212, 175, 55, 0.05);
+        }
 
-.filter-btn.active {
-    background: var(--gold-gradient);
-    color: var(--bg-primary);
-    font-weight: 700;
-    border-color: transparent;
-    box-shadow: 0 0 15px rgba(212, 175, 55, 0.25);
-}
+        .filter-btn.active {
+            background: var(--gold-gradient);
+            color: var(--bg-primary);
+            font-weight: 700;
+            border-color: transparent;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.25);
+        }
 
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    gap: 30px;
-}
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            gap: 30px;
+        }
 
-.portfolio-item {
-    background: rgba(12, 12, 12, 0.65);
-    border: 1px solid rgba(212, 175, 55, 0.08);
-    border-radius: 20px;
-    padding: 40px 30px;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), 
-                opacity 0.4s ease, 
-                border-color 0.5s ease, 
+        .portfolio-item {
+            background: rgba(12, 12, 12, 0.65);
+            border: 1px solid rgba(212, 175, 55, 0.08);
+            border-radius: 20px;
+            padding: 40px 30px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1),
+                opacity 0.4s ease,
+                border-color 0.5s ease,
                 box-shadow 0.5s ease;
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-}
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+        }
 
-/* For filter animation */
-.portfolio-item.hidden {
-    display: none !important;
-    opacity: 0;
-    transform: scale(0.9);
-}
+        /* For filter animation */
+        .portfolio-item.hidden {
+            display: none !important;
+            opacity: 0;
+            transform: scale(0.9);
+        }
 
-.portfolio-item.show {
-    animation: fadeInScale 0.5s forwards cubic-bezier(0.16, 1, 0.3, 1);
-}
+        .portfolio-item.show {
+            animation: fadeInScale 0.5s forwards cubic-bezier(0.16, 1, 0.3, 1);
+        }
 
-@keyframes fadeInScale {
-    from {
-        opacity: 0;
-        transform: scale(0.95);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
 
-.portfolio-item:hover {
-    transform: translateY(-8px);
-    border-color: rgba(212, 175, 55, 0.35);
-    box-shadow: var(--shadow-gold), var(--shadow-dark);
-}
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
 
-.portfolio-card-glow {
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(212, 175, 55, 0.02) 0%, transparent 65%);
-    transition: var(--transition-smooth);
-    pointer-events: none;
-    z-index: 1;
-}
+        .portfolio-item:hover {
+            transform: translateY(-8px);
+            border-color: rgba(212, 175, 55, 0.35);
+            box-shadow: var(--shadow-gold), var(--shadow-dark);
+        }
 
-.portfolio-item:hover .portfolio-card-glow {
-    background: radial-gradient(circle, rgba(212, 175, 55, 0.06) 0%, transparent 60%);
-}
+        .portfolio-card-glow {
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.02) 0%, transparent 65%);
+            transition: var(--transition-smooth);
+            pointer-events: none;
+            z-index: 1;
+        }
 
-.portfolio-icon {
-    font-size: 2rem;
-    color: var(--accent-gold);
-    margin-bottom: 25px;
-    background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0.02) 100%);
-    width: 60px;
-    height: 60px;
-    border-radius: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgba(212, 175, 55, 0.12);
-    z-index: 2;
-    transition: var(--transition-smooth);
-}
+        .portfolio-item:hover .portfolio-card-glow {
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.06) 0%, transparent 60%);
+        }
 
-.portfolio-item:hover .portfolio-icon {
-    transform: rotate(5deg) scale(1.05);
-    background: var(--gold-gradient);
-    color: var(--bg-primary);
-    border-color: transparent;
-    box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
-}
+        .portfolio-icon {
+            font-size: 2rem;
+            color: var(--accent-gold);
+            margin-bottom: 25px;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0.02) 100%);
+            width: 60px;
+            height: 60px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(212, 175, 55, 0.12);
+            z-index: 2;
+            transition: var(--transition-smooth);
+        }
 
-.portfolio-badge {
-    align-self: flex-start;
-    font-size: 0.8rem;
-    font-weight: 700;
-    color: var(--accent-gold-light);
-    background: rgba(212, 175, 55, 0.08);
-    border: 1px solid rgba(212, 175, 55, 0.2);
-    padding: 4px 12px;
-    border-radius: 20px;
-    margin-bottom: 15px;
-    z-index: 2;
-}
+        .portfolio-item:hover .portfolio-icon {
+            transform: rotate(5deg) scale(1.05);
+            background: var(--gold-gradient);
+            color: var(--bg-primary);
+            border-color: transparent;
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+        }
 
-.portfolio-item h3 {
-    font-size: 1.4rem;
-    margin-bottom: 15px;
-    color: var(--accent-champagne);
-    z-index: 2;
-}
+        .portfolio-badge {
+            align-self: flex-start;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--accent-gold-light);
+            background: rgba(212, 175, 55, 0.08);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            padding: 4px 12px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+            z-index: 2;
+        }
 
-.portfolio-item p {
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-    line-height: 1.6;
-    font-weight: 300;
-    z-index: 2;
-    margin-bottom: 25px;
-}
+        .portfolio-item h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: var(--accent-champagne);
+            z-index: 2;
+        }
 
-.portfolio-metrics {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 25px;
-    flex-wrap: wrap;
-    z-index: 2;
-    margin-top: auto;
-}
+        .portfolio-item p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            font-weight: 300;
+            z-index: 2;
+            margin-bottom: 25px;
+        }
 
-.metric-chip {
-    background: rgba(212, 175, 55, 0.04);
-    border: 1px solid rgba(212, 175, 55, 0.15);
-    color: var(--accent-gold-light);
-    padding: 5px 12px;
-    border-radius: 8px;
-    font-size: 0.85rem;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-    transition: var(--transition-quick);
-}
+        .portfolio-metrics {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+            z-index: 2;
+            margin-top: auto;
+        }
 
-.portfolio-item:hover .metric-chip {
-    border-color: rgba(212, 175, 55, 0.4);
-    background: rgba(212, 175, 55, 0.08);
-}
+        .metric-chip {
+            background: rgba(212, 175, 55, 0.04);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            color: var(--accent-gold-light);
+            padding: 5px 12px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            transition: var(--transition-quick);
+        }
 
-.portfolio-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    color: var(--accent-gold);
-    font-weight: 700;
-    font-size: 0.95rem;
-    z-index: 2;
-    transition: var(--transition-smooth);
-    width: fit-content;
-}
+        .portfolio-item:hover .metric-chip {
+            border-color: rgba(212, 175, 55, 0.4);
+            background: rgba(212, 175, 55, 0.08);
+        }
 
-.portfolio-link i {
-    transition: var(--transition-smooth);
-}
+        .portfolio-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--accent-gold);
+            font-weight: 700;
+            font-size: 0.95rem;
+            z-index: 2;
+            transition: var(--transition-smooth);
+            width: fit-content;
+        }
 
-.portfolio-item:hover .portfolio-link {
-    color: var(--accent-gold-light);
-}
+        .portfolio-link i {
+            transition: var(--transition-smooth);
+        }
 
-.portfolio-item:hover .portfolio-link i {
-    transform: translateX(-5px);
-}
+        .portfolio-item:hover .portfolio-link {
+            color: var(--accent-gold-light);
+        }
 
-/* Portfolio thumbnails & wrappers */
-.portfolio-image-wrapper {
-    width: 100%;
-    height: 200px;
-    overflow: hidden;
-    border-radius: 12px;
-    margin-bottom: 18px;
-    z-index: 2;
-    position: relative;
-    border: 1px solid rgba(212, 175, 55, 0.15);
-}
+        .portfolio-item:hover .portfolio-link i {
+            transform: translateX(-5px);
+        }
 
-.portfolio-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: top center;
-    transition: var(--transition-smooth);
-    display: block;
-    cursor: zoom-in;
-}
+        /* Portfolio thumbnails & wrappers */
+        .portfolio-image-wrapper {
+            width: 100%;
+            height: 200px;
+            overflow: hidden;
+            border-radius: 12px;
+            margin-bottom: 18px;
+            z-index: 2;
+            position: relative;
+            border: 1px solid rgba(212, 175, 55, 0.15);
+        }
 
-.portfolio-item:hover .portfolio-image {
-    transform: scale(1.05);
-}
+        .portfolio-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: top center;
+            transition: var(--transition-smooth);
+            display: block;
+            cursor: zoom-in;
+        }
 
-/* Lightbox Styles for Portfolio Dashboards */
-.lightbox {
-    display: none;
-    position: fixed;
-    z-index: 10000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    background-color: rgba(5, 5, 5, 0.96);
-    backdrop-filter: blur(15px);
-    -webkit-backdrop-filter: blur(15px);
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
+        .portfolio-item:hover .portfolio-image {
+            transform: scale(1.05);
+        }
 
-.lightbox.active {
-    display: flex;
-    opacity: 1;
-}
+        /* Lightbox Styles for Portfolio Dashboards */
+        .lightbox {
+            display: none;
+            position: fixed;
+            z-index: 10000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: rgba(5, 5, 5, 0.96);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
 
-/* Safety overrides: force visibility if something hides the page unexpectedly */
-html, body {
-    visibility: visible !important;
-}
+        .lightbox.active {
+            display: flex;
+            opacity: 1;
+        }
 
-.lightbox-content {
-    max-width: 92%;
-    max-height: 88%;
-    object-fit: contain;
-    border-radius: 12px;
-    border: 1.5px solid var(--accent-gold);
-    box-shadow: var(--shadow-gold-large);
-    transform: scale(0.92);
-    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-}
+        /* Safety overrides: force visibility if something hides the page unexpectedly */
+        html,
+        body {
+            visibility: visible !important;
+        }
 
-.lightbox.active .lightbox-content {
-    transform: scale(1);
-}
+        .lightbox-content {
+            max-width: 92%;
+            max-height: 88%;
+            object-fit: contain;
+            border-radius: 12px;
+            border: 1.5px solid var(--accent-gold);
+            box-shadow: var(--shadow-gold-large);
+            transform: scale(0.92);
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
 
-.lightbox-close {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    color: var(--text-secondary);
-    font-size: 2.8rem;
-    font-weight: 300;
-    cursor: pointer;
-    transition: var(--transition-quick);
-    line-height: 1;
-    z-index: 10001;
-}
+        .lightbox.active .lightbox-content {
+            transform: scale(1);
+        }
 
-.lightbox-close:hover {
-    color: var(--accent-gold-light);
-    transform: scale(1.1);
-}
+        .lightbox-close {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            color: var(--text-secondary);
+            font-size: 2.8rem;
+            font-weight: 300;
+            cursor: pointer;
+            transition: var(--transition-quick);
+            line-height: 1;
+            z-index: 10001;
+        }
 
-/* ==========================================================================
+        .lightbox-close:hover {
+            color: var(--accent-gold-light);
+            transform: scale(1.1);
+        }
+
+        /* ==========================================================================
    9. Call to Action Section (Luxury Centered Card)
    ========================================================================== */
-.contact {
-    background-color: var(--bg-primary);
-}
+        .contact {
+            background-color: var(--bg-primary);
+        }
 
-.cta-card {
-    background: radial-gradient(circle at 100% 0%, rgba(30, 30, 30, 0.4) 0%, rgba(10, 10, 10, 0.9) 100%);
-    border: 1.5px solid rgba(212, 175, 55, 0.15);
-    border-radius: 30px;
-    padding: 80px 50px;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    box-shadow: var(--shadow-dark), 0 20px 50px rgba(0,0,0,0.6);
-    z-index: 2;
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-}
+        .cta-card {
+            background: radial-gradient(circle at 100% 0%, rgba(30, 30, 30, 0.4) 0%, rgba(10, 10, 10, 0.9) 100%);
+            border: 1.5px solid rgba(212, 175, 55, 0.15);
+            border-radius: 30px;
+            padding: 80px 50px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: var(--shadow-dark), 0 20px 50px rgba(0, 0, 0, 0.6);
+            z-index: 2;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
 
-.cta-bg-glow {
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(212, 175, 55, 0.05) 0%, transparent 65%);
-    pointer-events: none;
-    z-index: 1;
-}
+        .cta-bg-glow {
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(212, 175, 55, 0.05) 0%, transparent 65%);
+            pointer-events: none;
+            z-index: 1;
+        }
 
-.cta-title {
-    font-size: 3rem;
-    color: var(--accent-champagne);
-    margin-bottom: 20px;
-    position: relative;
-    z-index: 2;
-}
+        .cta-title {
+            font-size: 3rem;
+            color: var(--accent-champagne);
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+        }
 
-.cta-text {
-    font-size: 1.25rem;
-    color: var(--text-secondary);
-    max-width: 650px;
-    margin: 0 auto 50px auto;
-    font-weight: 300;
-    position: relative;
-    z-index: 2;
-}
+        .cta-text {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            max-width: 650px;
+            margin: 0 auto 50px auto;
+            font-weight: 300;
+            position: relative;
+            z-index: 2;
+        }
 
-.cta-actions {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    position: relative;
-    z-index: 2;
-}
+        .cta-actions {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            position: relative;
+            z-index: 2;
+        }
 
-.cta-btn {
-    padding: 20px 55px;
-    font-size: 1.15rem;
-}
+        .cta-btn {
+            padding: 20px 55px;
+            font-size: 1.15rem;
+        }
 
-.phone-number {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 1.2rem;
-    color: var(--text-secondary);
-    font-family: var(--font-english);
-    font-weight: 600;
-    transition: var(--transition-quick);
-}
+        .phone-number {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            font-family: var(--font-english);
+            font-weight: 600;
+            transition: var(--transition-quick);
+        }
 
-.phone-number i {
-    color: var(--accent-gold);
-    font-size: 1.2rem;
-    transition: var(--transition-smooth);
-}
+        .phone-number i {
+            color: var(--accent-gold);
+            font-size: 1.2rem;
+            transition: var(--transition-smooth);
+        }
 
-.phone-number:hover {
-    color: var(--accent-gold-light);
-}
+        .phone-number:hover {
+            color: var(--accent-gold-light);
+        }
 
-.phone-number:hover i {
-    transform: scale(1.1) rotate(10deg);
-}
+        .phone-number:hover i {
+            transform: scale(1.1) rotate(10deg);
+        }
 
-/* ==========================================================================
+        /* ==========================================================================
    10. Footer Section
    ========================================================================== */
-.footer {
-    background-color: #030303;
-    padding: 80px 0 40px 0;
-    border-top: 1px solid rgba(212, 175, 55, 0.1);
-    position: relative;
-}
+        .footer {
+            background-color: #030303;
+            padding: 80px 0 40px 0;
+            border-top: 1px solid rgba(212, 175, 55, 0.1);
+            position: relative;
+        }
 
-.footer-top {
-    display: grid;
-        grid-template-columns: 1fr 1.2fr;
-    gap: 60px;
-    margin-bottom: 60px;
-}
+        .footer-top {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 60px;
+            margin-bottom: 60px;
+        }
 
-.footer-brand {
-    text-align: right;
-}
+        .footer-brand {
+            text-align: right;
+        }
 
-.footer-logo {
-    height: 45px;
-    width: auto;
-    margin-bottom: 20px;
-}
+        .footer-logo {
+            height: 45px;
+            width: auto;
+            margin-bottom: 20px;
+        }
 
-.footer-desc {
-    color: var(--accent-champagne);
-    font-size: 1.25rem;
-    margin-bottom: 10px;
-    font-weight: 500;
-}
+        .footer-desc {
+            color: var(--accent-champagne);
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
 
-.footer-regions {
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-    font-weight: 300;
-}
+        .footer-regions {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            font-weight: 300;
+        }
 
-.footer-links {
-    text-align: right;
-}
+        .footer-links {
+            text-align: right;
+        }
 
-.footer-links h4 {
-    color: var(--accent-gold);
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    font-weight: 600;
-}
+        .footer-links h4 {
+            color: var(--accent-gold);
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
 
-.footer-links ul {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
+        .footer-links ul {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
 
-.footer-links a {
-    color: var(--text-secondary);
-    font-size: 0.95rem;
-    transition: var(--transition-quick);
-}
+        .footer-links a {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            transition: var(--transition-quick);
+        }
 
-.footer-links a:hover {
-    color: var(--accent-gold-light);
-    padding-right: 5px;
-}
+        .footer-links a:hover {
+            color: var(--accent-gold-light);
+            padding-right: 5px;
+        }
 
-/* Footer Social Icons */
-.footer-socials {
-    display: flex;
-    gap: 15px;
-    margin-top: 25px;
-    justify-content: flex-start;
-}
+        /* Footer Social Icons */
+        .footer-socials {
+            display: flex;
+            gap: 15px;
+            margin-top: 25px;
+            justify-content: flex-start;
+        }
 
-.social-icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 1.5px solid rgba(212, 175, 55, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-secondary);
-    font-size: 1.1rem;
-    transition: var(--transition-smooth);
-    background: rgba(255, 255, 255, 0.01);
-}
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1.5px solid rgba(212, 175, 55, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            transition: var(--transition-smooth);
+            background: rgba(255, 255, 255, 0.01);
+        }
 
-.social-icon:hover {
-    color: var(--bg-primary);
-    background: var(--gold-gradient);
-    border-color: transparent;
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
-}
+        .social-icon:hover {
+            color: var(--bg-primary);
+            background: var(--gold-gradient);
+            border-color: transparent;
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+        }
 
-.footer-bottom {
-    padding-top: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
-    text-align: center;
-    color: var(--text-muted);
-    font-size: 0.9rem;
-    font-weight: 300;
-}
+        .footer-bottom {
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            font-weight: 300;
+        }
 
-/* ==========================================================================
+        /* ==========================================================================
    11. Scroll Reveal Animations (CSS States)
    ========================================================================== */
-.reveal {
-    opacity: 0;
-    transform: translateY(40px);
-    transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
-}
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
 
-.reveal.active {
-    opacity: 1;
-    transform: translateY(0);
-}
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
 
-/* ==========================================================================
+        /* ==========================================================================
    12. Responsive Design (Mobile First Focus)
    ========================================================================== */
-@media (max-width: 1024px) {
-    .hero-title {
-        font-size: 3rem;
-    }
-    .about-grid, .hero-grid {
-        gap: 40px;
-    }
-}
+        @media (max-width: 1024px) {
+            .hero-title {
+                font-size: 3rem;
+            }
 
-@media (max-width: 991px) {
-    .hero-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-        padding-top: 20px;
-        gap: 50px;
-    }
-    .hero {
-        padding-top: 100px;
-    }
-    
-    .hero-info {
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+            .about-grid,
+            .hero-grid {
+                gap: 40px;
+            }
+        }
 
-    .trust-bar {
-        max-width: 600px;
-        width: 100%;
-    }
+        @media (max-width: 991px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+                padding-top: 20px;
+                gap: 50px;
+            }
 
-    .hero-visual {
-        order: 2; /* Portrait below text in mobile/tablet standard layout */
-    }
+            .hero {
+                padding-top: 100px;
+            }
 
-    .about-grid {
-        grid-template-columns: 1fr;
-        gap: 50px;
-    }
+            .hero-info {
+                max-width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
 
-    .about-info {
-        order: 1;
-    }
+            .trust-bar {
+                max-width: 600px;
+                width: 100%;
+            }
 
-    .about-visual {
-        order: 2;
-    }
+            .hero-visual {
+                order: 2;
+                /* Portrait below text in mobile/tablet standard layout */
+            }
 
-    .section-header-left {
-        text-align: center;
-    }
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 50px;
+            }
 
-    .title-underline-left {
-        margin: 0 auto;
-    }
+            .about-info {
+                order: 1;
+            }
 
-    .title-underline-left::after {
-        left: 50%;
-        right: auto;
-        transform: translateX(-50%);
-    }
+            .about-visual {
+                order: 2;
+            }
 
-    .footer-top {
-        grid-template-columns: 1fr;
-        gap: 40px;
-        text-align: center;
-    }
+            .section-header-left {
+                text-align: center;
+            }
 
-    .footer-brand, .footer-links {
-        text-align: center;
-    }
-    
-    .footer-links ul {
-        align-items: center;
-    }
+            .title-underline-left {
+                margin: 0 auto;
+            }
 
-    .footer-socials {
-        justify-content: center;
-    }
-}
+            .title-underline-left::after {
+                left: 50%;
+                right: auto;
+                transform: translateX(-50%);
+            }
 
-@media (max-width: 768px) {
-    .section {
-        padding: 60px 0;
-    }
+            .footer-top {
+                grid-template-columns: 1fr;
+                gap: 40px;
+                text-align: center;
+            }
 
-    /* reduce top padding for small screens since navbar height reduces */
-    body {
-        padding-top: 70px;
-    }
-    
-    .navbar {
-        padding: 20px 0;
-    }
+            .footer-brand,
+            .footer-links {
+                text-align: center;
+            }
 
-    .nav-links {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 75%;
-        height: 100vh;
-        background: rgba(10, 10, 10, 0.95);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        flex-direction: column;
-        justify-content: center;
-        gap: 35px;
-        transition: var(--transition-smooth);
-        border-left: 1px solid rgba(212, 175, 55, 0.15);
-        z-index: 999;
-    }
+            .footer-links ul {
+                align-items: center;
+            }
 
-    .nav-links.active {
-        right: 0;
-    }
+            .footer-socials {
+                justify-content: center;
+            }
+        }
 
-    .hamburger {
-        display: flex;
-    }
+        @media (max-width: 768px) {
+            .section {
+                padding: 60px 0;
+            }
 
-    /* Prevent background scrolling when mobile nav is open */
-    body.nav-open {
-        overflow: hidden;
-    }
+            /* reduce top padding for small screens since navbar height reduces */
+            body {
+                padding-top: 70px;
+            }
 
-    .hero-title {
-        font-size: 2.3rem;
-    }
+            .navbar {
+                padding: 20px 0;
+            }
 
-    .hero-subtitle {
-        font-size: 1.1rem;
-        margin-bottom: 35px;
-    }
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 75%;
+                height: 100vh;
+                background: rgba(10, 10, 10, 0.95);
+                backdrop-filter: blur(20px);
+                -webkit-backdrop-filter: blur(20px);
+                flex-direction: column;
+                justify-content: center;
+                gap: 35px;
+                transition: var(--transition-smooth);
+                border-left: 1px solid rgba(212, 175, 55, 0.15);
+                z-index: 999;
+            }
 
-    /* trust-bar grid-template-columns 1fr moved to max-width 576px */
+            .nav-links.active {
+                right: 0;
+            }
 
-    .section-title {
-        font-size: 2.2rem;
-    }
+            .hamburger {
+                display: flex;
+            }
 
-    .cta-title {
-        font-size: 2.2rem;
-    }
+            /* Prevent background scrolling when mobile nav is open */
+            body.nav-open {
+                overflow: hidden;
+            }
 
-    .cta-text {
-        font-size: 1.1rem;
-        margin-bottom: 40px;
-    }
+            .hero-title {
+                font-size: 2.3rem;
+            }
 
-    .cta-actions {
-        flex-direction: column;
-        gap: 20px;
-        width: 100%;
-    }
+            .hero-subtitle {
+                font-size: 1.1rem;
+                margin-bottom: 35px;
+            }
 
-    .btn {
-        width: 100%;
-        padding: 16px 30px;
-    }
-    
-    .cta-btn {
-        width: 100%;
-    }
+            /* trust-bar grid-template-columns 1fr moved to max-width 576px */
 
-    .portrait-container, .about-portrait-frame {
-        max-width: 320px;
-    }
-}
+            .section-title {
+                font-size: 2.2rem;
+            }
 
-@media (max-width: 480px) {
-    .hero-title {
-        font-size: 1.9rem;
-    }
-    
-    .cta-title {
-        font-size: 1.8rem;
-    }
+            .cta-title {
+                font-size: 2.2rem;
+            }
 
-    body {
-        padding-top: 60px;
-    }
-    .service-card {
-        padding: 40px 25px;
-    }
-}
+            .cta-text {
+                font-size: 1.1rem;
+                margin-bottom: 40px;
+            }
 
-/* ==========================================================================
+            .cta-actions {
+                flex-direction: column;
+                gap: 20px;
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+                padding: 16px 30px;
+            }
+
+            .cta-btn {
+                width: 100%;
+            }
+
+            .portrait-container,
+            .about-portrait-frame {
+                max-width: 320px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 1.9rem;
+            }
+
+            .cta-title {
+                font-size: 1.8rem;
+            }
+
+            body {
+                padding-top: 60px;
+            }
+
+            .service-card {
+                padding: 40px 25px;
+            }
+        }
+
+        /* ==========================================================================
    13. Floating Actions (WhatsApp & Scroll to Top)
    ========================================================================== */
-.floating-whatsapp {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
-    color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2.2rem;
-    box-shadow: 0 5px 25px rgba(37, 211, 102, 0.4), 0 0 0 0px rgba(37, 211, 102, 0.5);
-    z-index: 9999;
-    transition: var(--transition-smooth);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-}
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.2rem;
+            box-shadow: 0 5px 25px rgba(37, 211, 102, 0.4), 0 0 0 0px rgba(37, 211, 102, 0.5);
+            z-index: 9999;
+            transition: var(--transition-smooth);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
 
-.floating-whatsapp:hover {
-    transform: translateY(-5px) scale(1.05);
-    box-shadow: 0 8px 30px rgba(37, 211, 102, 0.6);
-    color: #ffffff;
-}
+        .floating-whatsapp:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 8px 30px rgba(37, 211, 102, 0.6);
+            color: #ffffff;
+        }
 
-.whatsapp-pulse {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background: inherit;
-    z-index: -1;
-    animation: whatsappPulse 2s infinite;
-}
+        .whatsapp-pulse {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: inherit;
+            z-index: -1;
+            animation: whatsappPulse 2s infinite;
+        }
 
-@keyframes whatsappPulse {
-    0% {
-        transform: scale(0.95);
-        opacity: 0.8;
-    }
-    100% {
-        transform: scale(1.6);
-        opacity: 0;
-    }
-}
+        @keyframes whatsappPulse {
+            0% {
+                transform: scale(0.95);
+                opacity: 0.8;
+            }
 
-.back-to-top {
-    position: fixed;
-    bottom: 30px;
-    left: 30px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: rgba(20, 20, 20, 0.9);
-    border: 1px solid rgba(212, 175, 55, 0.2);
-    color: var(--accent-gold);
-    font-size: 1.2rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9998;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(20px);
-    transition: var(--transition-smooth);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-}
+            100% {
+                transform: scale(1.6);
+                opacity: 0;
+            }
+        }
 
-.back-to-top.visible {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-}
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            left: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: rgba(20, 20, 20, 0.9);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            color: var(--accent-gold);
+            font-size: 1.2rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9998;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: var(--transition-smooth);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
 
-.back-to-top:hover {
-    background: var(--gold-gradient);
-    color: var(--bg-primary);
-    border-color: transparent;
-    transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
-}
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
 
-@media (max-width: 576px) {
-    .trust-bar {
-        grid-template-columns: 1fr;
-        gap: 15px;
-    }
-}
+        .back-to-top:hover {
+            background: var(--gold-gradient);
+            color: var(--bg-primary);
+            border-color: transparent;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+        }
 
+        @media (max-width: 576px) {
+            .trust-bar {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+        }
     </style>
-    
+
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
 
     <!-- Scroll Progress Indicator -->
@@ -1785,9 +1812,11 @@ html, body {
         <div class="hero-bg-glow"></div>
         <div class="container hero-grid">
             <div class="hero-info reveal">
-                <h1 class="hero-title">نمّ أعمالك بذكاء... واجذب المزيد من العملاء <span class="text-gradient">باستراتيجية قائمة على النتائج</span></h1>
-                <p class="hero-subtitle">أساعد الشركات على جذب المزيد من العملاء، وزيادة المبيعات، وتسريع النمو من خلال التسويق بالأداء، وحلول الذكاء الاصطناعي، والمواقع الإلكترونية المصممة لتحقيق التحويلات.</p>
-                
+                <h1 class="hero-title">نمّ أعمالك بذكاء... واجذب المزيد من العملاء <span
+                        class="text-gradient">باستراتيجية قائمة على النتائج</span></h1>
+                <p class="hero-subtitle">أساعد الشركات على جذب المزيد من العملاء، وزيادة المبيعات، وتسريع النمو من خلال
+                    التسويق بالأداء، وحلول الذكاء الاصطناعي، والمواقع الإلكترونية المصممة لتحقيق التحويلات.</p>
+
                 <div class="trust-bar">
                     <div class="trust-item">
                         <div class="trust-icon"><i class="fa-solid fa-award"></i></div>
@@ -1820,13 +1849,14 @@ html, body {
                 </div>
 
                 <div class="hero-actions">
-                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20مناقشة%20تنمية%20أعمالي" target="_blank" class="btn btn-primary hero-btn">
+                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20مناقشة%20تنمية%20أعمالي"
+                        target="_blank" class="btn btn-primary hero-btn">
                         <i class="fa-brands fa-whatsapp"></i> تواصل عبر واتساب الآن
                         <span class="btn-shine"></span>
                     </a>
                 </div>
             </div>
-            
+
             <div class="hero-visual reveal">
                 <div class="portrait-container">
                     <div class="portrait-glow"></div>
@@ -1847,7 +1877,7 @@ html, body {
                     <div class="frame-tag"><span class="cinzel-text">AHMED GABER</span></div>
                 </div>
             </div>
-            
+
             <div class="about-info reveal">
                 <div class="section-header-left">
                     <span class="section-subtitle-tag">قصتي ورؤيتي</span>
@@ -1856,13 +1886,17 @@ html, body {
                 </div>
                 <div class="about-content">
                     <p class="about-text text-quote">كل مشروع ناجح يبدأ بفكرة.</p>
-                    <p class="about-text">لكن النمو الحقيقي لا يعتمد على الحظ، بل على التخطيط، والتحليل، واتخاذ القرارات الصحيحة في الوقت المناسب.</p>
-                    <p class="about-text">أؤمن أن التسويق ليس مجرد إعلانات، بل هو فهم عميق للسوق والعملاء والمنافسين، ثم بناء منظومة متكاملة قادرة على تحقيق نتائج قابلة للقياس.</p>
-                    <p class="about-text">خلال السنوات الماضية عملت مع العديد من رواد الأعمال في مصر والسعودية والكويت، وساعدتهم على الوصول إلى عملاء جدد، وزيادة المبيعات، وتحسين العائد من الاستثمار الإعلاني.</p>
-                    
+                    <p class="about-text">لكن النمو الحقيقي لا يعتمد على الحظ، بل على التخطيط، والتحليل، واتخاذ القرارات
+                        الصحيحة في الوقت المناسب.</p>
+                    <p class="about-text">أؤمن أن التسويق ليس مجرد إعلانات، بل هو فهم عميق للسوق والعملاء والمنافسين، ثم
+                        بناء منظومة متكاملة قادرة على تحقيق نتائج قابلة للقياس.</p>
+                    <p class="about-text">خلال السنوات الماضية عملت مع العديد من رواد الأعمال في مصر والسعودية والكويت،
+                        وساعدتهم على الوصول إلى عملاء جدد، وزيادة المبيعات، وتحسين العائد من الاستثمار الإعلاني.</p>
+
                     <div class="about-highlight">
                         <div class="highlight-icon"><i class="fa-solid fa-quote-right"></i></div>
-                        <p>منهجي يعتمد على البحث، والتحليل، والتنفيذ، والتطوير المستمر للوصول إلى أفضل النتائج الممكنة.</p>
+                        <p>منهجي يعتمد على البحث، والتحليل، والتنفيذ، والتطوير المستمر للوصول إلى أفضل النتائج الممكنة.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -1877,14 +1911,15 @@ html, body {
                 <h2 class="section-title">الخدمات التي أقدمها</h2>
                 <div class="title-underline"></div>
             </div>
-            
+
             <div class="services-grid">
                 <!-- Service 1 -->
                 <div class="service-card reveal">
                     <div class="card-bg-glow"></div>
                     <div class="service-icon"><i class="fa-solid fa-bullhorn"></i></div>
                     <h3>إدارة الحملات الإعلانية</h3>
-                    <p>إنشاء وإدارة الحملات الإعلانية على منصات التواصل الاجتماعي للوصول إلى العملاء المستهدفين وتحقيق أعلى عائد على الاستثمار.</p>
+                    <p>إنشاء وإدارة الحملات الإعلانية على منصات التواصل الاجتماعي للوصول إلى العملاء المستهدفين وتحقيق
+                        أعلى عائد على الاستثمار.</p>
                     <div class="card-arrow"><i class="fa-solid fa-arrow-left"></i></div>
                 </div>
                 <!-- Service 2 -->
@@ -1892,7 +1927,8 @@ html, body {
                     <div class="card-bg-glow"></div>
                     <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
                     <h3>تصميم المواقع الإلكترونية</h3>
-                    <p>تصميم مواقع احترافية سريعة ومتوافقة مع جميع الأجهزة تساعد على بناء الثقة وتحويل الزوار إلى عملاء.</p>
+                    <p>تصميم مواقع احترافية سريعة ومتوافقة مع جميع الأجهزة تساعد على بناء الثقة وتحويل الزوار إلى عملاء.
+                    </p>
                     <div class="card-arrow"><i class="fa-solid fa-arrow-left"></i></div>
                 </div>
                 <!-- Service 3 -->
@@ -1931,7 +1967,7 @@ html, body {
                 <h2 class="section-title">لماذا أحمد جابر؟</h2>
                 <div class="title-underline"></div>
             </div>
-            
+
             <div class="why-me-grid reveal">
                 <div class="why-card">
                     <div class="why-icon"><i class="fa-solid fa-check"></i></div>
@@ -2014,12 +2050,15 @@ html, body {
                     <div class="portfolio-icon"><i class="fa-solid fa-square-share-nodes"></i></div>
                     <span class="portfolio-badge">حملات إعلانية (Meta)</span>
                     <h3>هندسة التفاعل الفيروسي (Viral Engagement)</h3>
-                    <p>سلسلة حملات تفاعلية حققت الكثير من التفاعلات بتكلفة شبه صفرية. أمثلة: حملة فاست شريمب، حملة فسيخ تكة، تفاعل بوليفارد.</p>
+                    <p>سلسلة حملات تفاعلية حققت الكثير من التفاعلات بتكلفة شبه صفرية. أمثلة: حملة فاست شريمب، حملة فسيخ
+                        تكة، تفاعل بوليفارد.</p>
                     <div class="portfolio-metrics">
                         <span class="metric-chip"><i class="fa-solid fa-hand-holding-heart"></i> 140.6K+ تفاعل</span>
                         <span class="metric-chip"><i class="fa-solid fa-coins"></i> 0.02 ج.م / تفاعل</span>
                     </div>
-                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20الاستفسار%20عن%20حملات%20التفاعل%20الفيروسي" target="_blank" class="portfolio-link">استفسر عن الخدمة <i class="fa-solid fa-arrow-left"></i></a>
+                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20الاستفسار%20عن%20حملات%20التفاعل%20الفيروسي"
+                        target="_blank" class="portfolio-link">استفسر عن الخدمة <i
+                            class="fa-solid fa-arrow-left"></i></a>
                 </div>
 
                 <!-- Project 3 (قمع التسويق والتحويل المتكامل) -->
@@ -2031,29 +2070,37 @@ html, body {
                     <div class="portfolio-icon"><i class="fa-solid fa-filter"></i></div>
                     <span class="portfolio-badge">استراتيجية نمو</span>
                     <h3>قمع التسويق والتحويل المتكامل</h3>
-                    <p>بناء قمع تسويقي متكامل يبدأ بالوعي والاهتمام ثم الانتقال للتحويل الفعلي وكسب بيانات المهتمين بكفاءة عالية لقطاعات B2B والعقارات.</p>
+                    <p>بناء قمع تسويقي متكامل يبدأ بالوعي والاهتمام ثم الانتقال للتحويل الفعلي وكسب بيانات المهتمين
+                        بكفاءة عالية لقطاعات B2B والعقارات.</p>
                     <div class="portfolio-metrics">
                         <span class="metric-chip"><i class="fa-solid fa-bullseye"></i> Awareness (الوعي)</span>
                         <span class="metric-chip"><i class="fa-solid fa-arrow-down"></i> Conversion (التحويل)</span>
                     </div>
-                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20تصميم%20قمع%20تسويقي%20متكامل%20لأعمالي" target="_blank" class="portfolio-link">استفسر عن الخدمة <i class="fa-solid fa-arrow-left"></i></a>
+                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20تصميم%20قمع%20تسويقي%20متكامل%20لأعمالي"
+                        target="_blank" class="portfolio-link">استفسر عن الخدمة <i
+                            class="fa-solid fa-arrow-left"></i></a>
                 </div>
 
                 <!-- Project 4 (التشخيص العميق وتجاوز معايير السوق) -->
                 <div class="portfolio-item" data-category="strategy">
                     <div class="portfolio-card-glow"></div>
                     <div class="portfolio-image-wrapper">
-                        <img src="images/portfolio/7.1.png" alt="التشخيص العميق وتجاوز معايير السوق" class="portfolio-image">
+                        <img src="images/portfolio/7.1.png" alt="التشخيص العميق وتجاوز معايير السوق"
+                            class="portfolio-image">
                     </div>
                     <div class="portfolio-icon"><i class="fa-solid fa-gauge-high"></i></div>
                     <span class="portfolio-badge">تحليل أداء</span>
                     <h3>التشخيص العميق وتجاوز معايير السوق</h3>
-                    <p>مراقبة مستمرة وتحليلات متقدمة لرفع مؤشرات الأداء (CTR) والتدخل السريع لتحسين جودة الاستهداف وتجاوز متوسط السوق.</p>
+                    <p>مراقبة مستمرة وتحليلات متقدمة لرفع مؤشرات الأداء (CTR) والتدخل السريع لتحسين جودة الاستهداف
+                        وتجاوز متوسط السوق.</p>
                     <div class="portfolio-metrics">
                         <span class="metric-chip"><i class="fa-solid fa-chart-simple"></i> CTR 7.04%</span>
-                        <span class="metric-chip"><i class="fa-solid fa-arrow-up-right-dots"></i> +63.85% فوق السوق</span>
+                        <span class="metric-chip"><i class="fa-solid fa-arrow-up-right-dots"></i> +63.85% فوق
+                            السوق</span>
                     </div>
-                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20تحسين%20وتشخيص%20أداء%20حملاتي%20الحالية" target="_blank" class="portfolio-link">استفسر عن الخدمة <i class="fa-solid fa-arrow-left"></i></a>
+                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20تحسين%20وتشخيص%20أداء%20حملاتي%20الحالية"
+                        target="_blank" class="portfolio-link">استفسر عن الخدمة <i
+                            class="fa-solid fa-arrow-left"></i></a>
                 </div>
 
                 <!-- Project 5 (توليد العملاء لقطاع العقارات) -->
@@ -2065,12 +2112,15 @@ html, body {
                     <div class="portfolio-icon"><i class="fa-solid fa-house-laptop"></i></div>
                     <span class="portfolio-badge">حملات عقارية</span>
                     <h3>قيادة النمو وتوليد عملاء قطاع العقارات</h3>
-                    <p>حملات توليد ليدز (Lead Generation) ومراسلات لقطاع العقارات والسكني المفروش مع تحسين الجودة وخفض التكاليف ومراقبة مستمرة.</p>
+                    <p>حملات توليد ليدز (Lead Generation) ومراسلات لقطاع العقارات والسكني المفروش مع تحسين الجودة وخفض
+                        التكاليف ومراقبة مستمرة.</p>
                     <div class="portfolio-metrics">
                         <span class="metric-chip"><i class="fa-solid fa-users"></i> 377 عميل محتمل</span>
                         <span class="metric-chip"><i class="fa-solid fa-receipt"></i> 89.70 ج.م / عميل</span>
                     </div>
-                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20إطلاق%20حملات%20توليد%20عملاء%20لعقاراتي" target="_blank" class="portfolio-link">استفسر عن الخدمة <i class="fa-solid fa-arrow-left"></i></a>
+                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20إطلاق%20حملات%20توليد%20عملاء%20لعقاراتي"
+                        target="_blank" class="portfolio-link">استفسر عن الخدمة <i
+                            class="fa-solid fa-arrow-left"></i></a>
                 </div>
 
                 <!-- Project 6 (السيطرة على قطاع المطاعم) -->
@@ -2082,165 +2132,205 @@ html, body {
                     <div class="portfolio-icon"><i class="fa-solid fa-utensils"></i></div>
                     <span class="portfolio-badge">حملات مطاعم</span>
                     <h3>حملات عالية الكثافة لقطاع المطاعم B2C</h3>
-                    <p>السيطرة على قطاع المطاعم من خلال فيديوهات الريلز ومحتوى الأطعمة الفيروسي الذي يخفض تكلفة التفاعل لأدنى حد.</p>
+                    <p>السيطرة على قطاع المطاعم من خلال فيديوهات الريلز ومحتوى الأطعمة الفيروسي الذي يخفض تكلفة التفاعل
+                        لأدنى حد.</p>
                     <div class="portfolio-metrics">
                         <span class="metric-chip"><i class="fa-solid fa-fire"></i> 140.6K+ تفاعل</span>
                         <span class="metric-chip"><i class="fa-solid fa-tags"></i> 0.02 ج.م / تفاعل</span>
                     </div>
-                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20تسويق%20مطعمي%20وجذب%20الزبائن" target="_blank" class="portfolio-link">استفسر عن الخدمة <i class="fa-solid fa-arrow-left"></i></a>
+                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20تسويق%20مطعمي%20وجذب%20الزبائن"
+                        target="_blank" class="portfolio-link">استفسر عن الخدمة <i
+                            class="fa-solid fa-arrow-left"></i></a>
                 </div>
 
                 <!-- Project 7 (التحليل التشخيصي واختبارات الأداء A/B) -->
                 <div class="portfolio-item" data-category="strategy">
                     <div class="portfolio-card-glow"></div>
                     <div class="portfolio-image-wrapper">
-                        <img src="images/portfolio/8.png" alt="التحليل التشخيصي واختبارات الأداء A/B" class="portfolio-image">
+                        <img src="images/portfolio/8.png" alt="التحليل التشخيصي واختبارات الأداء A/B"
+                            class="portfolio-image">
                     </div>
                     <div class="portfolio-icon"><i class="fa-solid fa-vial"></i></div>
                     <span class="portfolio-badge">اختبارات A/B</span>
                     <h3>التحليل التشخيصي واختبارات الأداء (Diagnostic A/B)</h3>
-                    <p>مقارنة أداء المجموعات الإعلانية واختبار الاستهداف (التفصيلي مقابل العام) لوقف الإعلانات الضعيفة وضبط الميزانيات.</p>
+                    <p>مقارنة أداء المجموعات الإعلانية واختبار الاستهداف (التفصيلي مقابل العام) لوقف الإعلانات الضعيفة
+                        وضبط الميزانيات.</p>
                     <div class="portfolio-metrics">
                         <span class="metric-chip"><i class="fa-solid fa-circle-check"></i> CTR 7.04% للناجح</span>
                         <span class="metric-chip"><i class="fa-solid fa-users-viewfinder"></i> استهداف تفصيلي</span>
                     </div>
-                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أود%20الاستعانة%20بـ%20A/B%20Testing%20لإعلاناتي" target="_blank" class="portfolio-link">استفسر عن الخدمة <i class="fa-solid fa-arrow-left"></i></a>
+                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أود%20الاستعانة%20بـ%20A/B%20Testing%20لإعلاناتي"
+                        target="_blank" class="portfolio-link">استفسر عن الخدمة <i
+                            class="fa-solid fa-arrow-left"></i></a>
                 </div>
 
                 <!-- Project 8 (حل المشكلات التقنية وتوسيع الحملات) -->
                 <div class="portfolio-item" data-category="strategy">
                     <div class="portfolio-card-glow"></div>
                     <div class="portfolio-image-wrapper">
-                        <img src="images/portfolio/9.png" alt="حل المشكلات التقنية وتوسيع الحملات" class="portfolio-image">
+                        <img src="images/portfolio/9.png" alt="حل المشكلات التقنية وتوسيع الحملات"
+                            class="portfolio-image">
                     </div>
                     <div class="portfolio-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
                     <span class="portfolio-badge">حلول تقنية</span>
                     <h3>حل المشكلات التقنية وتوسيع نطاق الحملات</h3>
-                    <p>التشخيص والتعامل الجذري مع مشكلات تداخل المزاد (Auction Overlap)، الإرهاق الإعلاني (Ad Fatigue)، وتراجع تقييم الجودة.</p>
+                    <p>التشخيص والتعامل الجذري مع مشكلات تداخل المزاد (Auction Overlap)، الإرهاق الإعلاني (Ad Fatigue)،
+                        وتراجع تقييم الجودة.</p>
                     <div class="portfolio-metrics">
                         <span class="metric-chip"><i class="fa-solid fa-gears"></i> Auction Overlap</span>
                         <span class="metric-chip"><i class="fa-solid fa-arrows-spin"></i> Creative Liquidity</span>
                     </div>
-                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أواجه%20مشاكل%20تقنية%20وتداخل%20في%20إعلاناتي%20وأحتاج%20لحلها" target="_blank" class="portfolio-link">استفسر عن الخدمة <i class="fa-solid fa-arrow-left"></i></a>
+                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أواجه%20مشاكل%20تقنية%20وتداخل%20في%20إعلاناتي%20وأحتاج%20لحلها"
+                        target="_blank" class="portfolio-link">استفسر عن الخدمة <i
+                            class="fa-solid fa-arrow-left"></i></a>
                 </div>
 
                 <!-- Project 9 (إدارة الميزانيات الضخمة: بيئة Meta) -->
                 <div class="portfolio-item" data-category="ads">
                     <div class="portfolio-card-glow"></div>
                     <div class="portfolio-image-wrapper">
-                        <img src="images/portfolio/10.1.png" alt="إدارة الميزانيات الضخمة: بيئة Meta" class="portfolio-image">
+                        <img src="images/portfolio/10.1.png" alt="إدارة الميزانيات الضخمة: بيئة Meta"
+                            class="portfolio-image">
                     </div>
                     <div class="portfolio-icon"><i class="fa-brands fa-facebook"></i></div>
                     <span class="portfolio-badge">حملات Meta</span>
                     <h3>إدارة الميزانيات الضخمة في بيئة Meta</h3>
-                    <p>إدارة يومية لحملات معقدة بأهداف متنوعة (الرسائل، التفاعل، ThruPlays) مع تحسين مستمر لـ CPM وتقليل الـ CPA.</p>
+                    <p>إدارة يومية لحملات معقدة بأهداف متنوعة (الرسائل، التفاعل، ThruPlays) مع تحسين مستمر لـ CPM وتقليل
+                        الـ CPA.</p>
                     <div class="portfolio-metrics">
                         <span class="metric-chip"><i class="fa-solid fa-sack-dollar"></i> ميزانيات ضخمة</span>
                         <span class="metric-chip"><i class="fa-solid fa-chart-line"></i> استراتيجية أقصى نتائج</span>
                     </div>
-                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20إسناد%20إدارة%20ميزانياتنا%20الإعلانية%20إليك" target="_blank" class="portfolio-link">استفسر عن الخدمة <i class="fa-solid fa-arrow-left"></i></a>
+                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20إسناد%20إدارة%20ميزانياتنا%20الإعلانية%20إليك"
+                        target="_blank" class="portfolio-link">استفسر عن الخدمة <i
+                            class="fa-solid fa-arrow-left"></i></a>
                 </div>
 
                 <!-- Project 10 (الهيمنة على نوايا البحث - Google Ads) -->
                 <div class="portfolio-item" data-category="ads">
                     <div class="portfolio-card-glow"></div>
                     <div class="portfolio-image-wrapper">
-                        <img src="images/portfolio/10.2.png" alt="الهيمنة على نوايا البحث - Google Ads" class="portfolio-image">
+                        <img src="images/portfolio/10.2.png" alt="الهيمنة على نوايا البحث - Google Ads"
+                            class="portfolio-image">
                     </div>
                     <div class="portfolio-icon"><i class="fa-brands fa-google"></i></div>
                     <span class="portfolio-badge">إعلانات Google</span>
                     <h3>الهيمنة على نوايا البحث - Google Ads</h3>
-                    <p>استهداف نوايا البحث ذات النية الشرائية بأسواق شديدة التنافسية لتحقيق آلاف النقرات مع خفض تكلفة النقرة لأقصى درجة.</p>
+                    <p>استهداف نوايا البحث ذات النية الشرائية بأسواق شديدة التنافسية لتحقيق آلاف النقرات مع خفض تكلفة
+                        النقرة لأقصى درجة.</p>
                     <div class="portfolio-metrics">
                         <span class="metric-chip"><i class="fa-solid fa-eye"></i> 73.2K ظهور</span>
                         <span class="metric-chip"><i class="fa-solid fa-mouse-pointer"></i> 2.74K نقرة</span>
                     </div>
-                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20الهيمنة%20على%20نتائج%20بحث%20جوجل%20لمشروعي" target="_blank" class="portfolio-link">استفسر عن الخدمة <i class="fa-solid fa-arrow-left"></i></a>
+                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20الهيمنة%20على%20نتائج%20بحث%20جوجل%20لمشروعي"
+                        target="_blank" class="portfolio-link">استفسر عن الخدمة <i
+                            class="fa-solid fa-arrow-left"></i></a>
                 </div>
 
                 <!-- Project 11 (التأثير العالي في السوق الخليجي) -->
                 <div class="portfolio-item" data-category="ads">
                     <div class="portfolio-card-glow"></div>
                     <div class="portfolio-image-wrapper">
-                        <img src="images/portfolio/11.png" alt="التأثير العالي في السوق الخليجي" class="portfolio-image">
+                        <img src="images/portfolio/11.png" alt="التأثير العالي في السوق الخليجي"
+                            class="portfolio-image">
                     </div>
                     <div class="portfolio-icon"><i class="fa-brands fa-snapchat"></i></div>
                     <span class="portfolio-badge">إعلانات سناب شات</span>
                     <h3>إعلانات سناب شات للسوق الخليجي (السعودية والكويت)</h3>
-                    <p>إدارة إنفاق فعالة لضمان تغطية جغرافية واسعة مع الحفاظ على معدلات سحب صعوداً (Swipe-Up) مرتفعة ومربحة.</p>
+                    <p>إدارة إنفاق فعالة لضمان تغطية جغرافية واسعة مع الحفاظ على معدلات سحب صعوداً (Swipe-Up) مرتفعة
+                        ومربحة.</p>
                     <div class="portfolio-metrics">
                         <span class="metric-chip"><i class="fa-solid fa-chart-line"></i> 535.4K+ ظهور</span>
                         <span class="metric-chip"><i class="fa-solid fa-arrow-up"></i> 9.3K+ سحب صعوداً</span>
                     </div>
-                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أود%20الاستفسار%20عن%20إعلانات%20سناب%20شات%20للسوق%20الخليجي" target="_blank" class="portfolio-link">استفسر عن الخدمة <i class="fa-solid fa-arrow-left"></i></a>
+                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أود%20الاستفسار%20عن%20إعلانات%20سناب%20شات%20للسوق%20الخليجي"
+                        target="_blank" class="portfolio-link">استفسر عن الخدمة <i
+                            class="fa-solid fa-arrow-left"></i></a>
                 </div>
 
                 <!-- Project 12 (فيروسية موجهة للمبيعات - TikTok Ads) -->
                 <div class="portfolio-item" data-category="ads">
                     <div class="portfolio-card-glow"></div>
                     <div class="portfolio-image-wrapper">
-                        <img src="images/portfolio/12.1.png" alt="فيروسية موجهة للمبيعات - TikTok Ads" class="portfolio-image">
+                        <img src="images/portfolio/12.1.png" alt="فيروسية موجهة للمبيعات - TikTok Ads"
+                            class="portfolio-image">
                     </div>
                     <div class="portfolio-icon"><i class="fa-brands fa-tiktok"></i></div>
                     <span class="portfolio-badge">إعلانات تيك توك</span>
                     <h3>فيروسية موجهة للمبيعات - TikTok Ads</h3>
-                    <p>حملات قادرة على تحويل المشاهدات إلى أرقام مبيعات حقيقية بكسور من الريال لجمهور دول الخليج العربي.</p>
+                    <p>حملات قادرة على تحويل المشاهدات إلى أرقام مبيعات حقيقية بكسور من الريال لجمهور دول الخليج العربي.
+                    </p>
                     <div class="portfolio-metrics">
                         <span class="metric-chip"><i class="fa-solid fa-cart-shopping"></i> 17,174 تحويل</span>
-                        <span class="metric-chip"><i class="fa-solid fa-money-bill-wave"></i> 0.29 SAR تكلفة تحويل</span>
+                        <span class="metric-chip"><i class="fa-solid fa-money-bill-wave"></i> 0.29 SAR تكلفة
+                            تحويل</span>
                     </div>
-                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20إطلاق%20حملات%20تيك%20توك%20لزيادة%20المبيعات" target="_blank" class="portfolio-link">استفسر عن الخدمة <i class="fa-solid fa-arrow-left"></i></a>
+                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20إطلاق%20حملات%20تيك%20توك%20لزيادة%20المبيعات"
+                        target="_blank" class="portfolio-link">استفسر عن الخدمة <i
+                            class="fa-solid fa-arrow-left"></i></a>
                 </div>
 
                 <!-- Project 13 (السيطرة على الأسواق الخليجية) -->
                 <div class="portfolio-item" data-category="ads">
                     <div class="portfolio-card-glow"></div>
                     <div class="portfolio-image-wrapper">
-                        <img src="images/portfolio/12.2.png" alt="السيطرة على الأسواق الخليجية: TikTok & Snapchat" class="portfolio-image">
+                        <img src="images/portfolio/12.2.png" alt="السيطرة على الأسواق الخليجية: TikTok & Snapchat"
+                            class="portfolio-image">
                     </div>
                     <div class="portfolio-icon"><i class="fa-solid fa-globe"></i></div>
                     <span class="portfolio-badge">منصات الخليج</span>
                     <h3>السيطرة على الأسواق الخليجية (Snapchat & TikTok)</h3>
-                    <p>تحقيق مئات الآلاف من الظهور وإدارة ميزانيات بالدولار الأمريكي مع الحفاظ على معدل سحب وتفاعل عالي لعلامات تجارية استهلاكية.</p>
+                    <p>تحقيق مئات الآلاف من الظهور وإدارة ميزانيات بالدولار الأمريكي مع الحفاظ على معدل سحب وتفاعل عالي
+                        لعلامات تجارية استهلاكية.</p>
                     <div class="portfolio-metrics">
                         <span class="metric-chip"><i class="fa-solid fa-users"></i> 585K+ ظهور (سناب)</span>
                         <span class="metric-chip"><i class="fa-solid fa-bolt"></i> 43.7K نقرة (تيك توك)</span>
                     </div>
-                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أود%20إطلاق%20حملة%20مشتركة%20على%20سناب%20وتيك%20توك%20في%20الخليج" target="_blank" class="portfolio-link">استفسر عن الخدمة <i class="fa-solid fa-arrow-left"></i></a>
+                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أود%20إطلاق%20حملة%20مشتركة%20على%20سناب%20وتيك%20توك%20في%20الخليج"
+                        target="_blank" class="portfolio-link">استفسر عن الخدمة <i
+                            class="fa-solid fa-arrow-left"></i></a>
                 </div>
 
                 <!-- Project 14 (ما وراء الإعلانات: البنية التحتية والمتاجر) -->
                 <div class="portfolio-item" data-category="web">
                     <div class="portfolio-card-glow"></div>
                     <div class="portfolio-image-wrapper">
-                        <img src="images/portfolio/13.png" alt="ما وراء الإعلانات: البنية التحتية والمتاجر" class="portfolio-image">
+                        <img src="images/portfolio/13.png" alt="ما وراء الإعلانات: البنية التحتية والمتاجر"
+                            class="portfolio-image">
                     </div>
                     <div class="portfolio-icon"><i class="fa-solid fa-cubes"></i></div>
                     <span class="portfolio-badge">بنية رقمية</span>
                     <h3>بناء البنية التحتية للمتاجر والمواقع (CRO)</h3>
-                    <p>تصميم وتطوير مواقع ووردبريس، بناء متاجر إلكترونية احترافية على شوبيفاي، وتأسيس المتاجر المحلية (سلة، Easy Order).</p>
+                    <p>تصميم وتطوير مواقع ووردبريس، بناء متاجر إلكترونية احترافية على شوبيفاي، وتأسيس المتاجر المحلية
+                        (سلة، Easy Order).</p>
                     <div class="portfolio-metrics">
                         <span class="metric-chip"><i class="fa-solid fa-code"></i> WordPress & Shopify</span>
                         <span class="metric-chip"><i class="fa-solid fa-cart-shopping"></i> Salla & Easy Order</span>
                     </div>
-                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20تطوير%20موقع%20أو%20متجر%20إلكتروني%20لمشروعي" target="_blank" class="portfolio-link">استفسر عن الخدمة <i class="fa-solid fa-arrow-left"></i></a>
+                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20تطوير%20موقع%20أو%20متجر%20إلكتروني%20لمشروعي"
+                        target="_blank" class="portfolio-link">استفسر عن الخدمة <i
+                            class="fa-solid fa-arrow-left"></i></a>
                 </div>
 
                 <!-- Project 15 (معرض المشاريع والبنية التحتية الرقمية) -->
                 <div class="portfolio-item" data-category="web">
                     <div class="portfolio-card-glow"></div>
                     <div class="portfolio-image-wrapper">
-                        <img src="images/portfolio/14.png" alt="معرض المشاريع والبنية التحتية الرقمية" class="portfolio-image">
+                        <img src="images/portfolio/14.png" alt="معرض المشاريع والبنية التحتية الرقمية"
+                            class="portfolio-image">
                     </div>
                     <div class="portfolio-icon"><i class="fa-solid fa-display"></i></div>
                     <span class="portfolio-badge">مشاريع حية</span>
                     <h3>معرض المشاريع والبنية التحتية الرقمية</h3>
-                    <p>تصميم وتطوير واجهات وباقات تصميم متاجر (مثل LaVista و Bella) ومواقع لشركات كبرى (مؤسسة السبيعي للنقل، مكافحة القوارض بالكويت).</p>
+                    <p>تصميم وتطوير واجهات وباقات تصميم متاجر (مثل LaVista و Bella) ومواقع لشركات كبرى (مؤسسة السبيعي
+                        للنقل، مكافحة القوارض بالكويت).</p>
                     <div class="portfolio-metrics">
                         <span class="metric-chip"><i class="fa-solid fa-truck"></i> السبيعي للنقل</span>
                         <span class="metric-chip"><i class="fa-solid fa-bug"></i> مكافحة الحشرات بالكويت</span>
                     </div>
-                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20تصميم%20موقع%20مؤسسي%20أو%20باقة%20تصميم%20متاجر" target="_blank" class="portfolio-link">استفسر عن الخدمة <i class="fa-solid fa-arrow-left"></i></a>
+                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20تصميم%20موقع%20مؤسسي%20أو%20باقة%20تصميم%20متاجر"
+                        target="_blank" class="portfolio-link">استفسر عن الخدمة <i
+                            class="fa-solid fa-arrow-left"></i></a>
                 </div>
 
                 <!-- Project 16 (تحليل الأداء ورفع معايير السوق) -->
@@ -2252,12 +2342,220 @@ html, body {
                     <div class="portfolio-icon"><i class="fa-solid fa-chart-pie"></i></div>
                     <span class="portfolio-badge">لوحة الأرقام والـ KPI</span>
                     <h3>تحليلات الأداء وقياسات الـ KPI</h3>
-                    <p>لوحة تحليل تفصيلية لقياس مؤشرات الأداء الأساسية (التكلفة لكل تحويل، معدل التحويل، معدل التفاعل، CTR) ومقارنتها بمتوسط السوق.</p>
+                    <p>لوحة تحليل تفصيلية لقياس مؤشرات الأداء الأساسية (التكلفة لكل تحويل، معدل التحويل، معدل التفاعل،
+                        CTR) ومقارنتها بمتوسط السوق.</p>
                     <div class="portfolio-metrics">
                         <span class="metric-chip"><i class="fa-solid fa-gauge"></i> +35% تجاوز السوق</span>
                         <span class="metric-chip"><i class="fa-solid fa-chart-line"></i> CTR 3.72% (إجمالي)</span>
                     </div>
-                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20الحصول%20على%20لوحة%20تحليلية%20وتشخيصية%20لحملاتي" target="_blank" class="portfolio-link">استفسر عن الخدمة <i class="fa-solid fa-arrow-left"></i></a>
+                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20الحصول%20على%20لوحة%20تحليلية%20وتشخيصية%20لحملاتي"
+                        target="_blank" class="portfolio-link">استفسر عن الخدمة <i
+                            class="fa-solid fa-arrow-left"></i></a>
+                </div>
+
+                <!-- Project 17 (حملات Boulevard Compound العقارية - الريلز الفيروسي) -->
+                <div class="portfolio-item" data-category="ads">
+                    <div class="portfolio-card-glow"></div>
+                    <div class="portfolio-image-wrapper">
+                        <img src="images/portfolio/1.png" alt="حملات ريلز Boulevard Compound الفيروسية"
+                            class="portfolio-image">
+                    </div>
+                    <div class="portfolio-icon"><i class="fa-solid fa-building"></i></div>
+                    <span class="portfolio-badge">حملات عقارية (Meta)</span>
+                    <h3>حملات ريلز Boulevard Compound الفيروسية</h3>
+                    <p>سلسلة حملات ريلز فيروسية لكمبوند بوليفارد بأسيوط الجديدة حققت أكثر من 81K مشاهدة على منشور واحد
+                        مع 378 تفاعل و37 متابع جديد، مع استمرار نمو المشاهدات.</p>
+                    <div class="portfolio-metrics">
+                        <span class="metric-chip"><i class="fa-solid fa-eye"></i> 81K+ مشاهدة</span>
+                        <span class="metric-chip"><i class="fa-solid fa-heart"></i> 378+ تفاعل</span>
+                    </div>
+                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20إطلاق%20حملات%20ريلز%20عقارية%20فيروسية"
+                        target="_blank" class="portfolio-link">استفسر عن الخدمة <i
+                            class="fa-solid fa-arrow-left"></i></a>
+                </div>
+
+                <!-- Project 18 (إدارة حملات قلاع للاستثمار العقاري) -->
+                <div class="portfolio-item" data-category="ads">
+                    <div class="portfolio-card-glow"></div>
+                    <div class="portfolio-image-wrapper">
+                        <img src="images/portfolio/24.png" alt="حملات قلاع للاستثمار العقاري" class="portfolio-image">
+                    </div>
+                    <div class="portfolio-icon"><i class="fa-solid fa-city"></i></div>
+                    <span class="portfolio-badge">حملات عقارية (Meta)</span>
+                    <h3>حملات فيروسية لقلاع للاستثمار العقاري</h3>
+                    <p>إدارة حملات ريلز لشركة قلاع للاستثمار العقاري حققت 277.5K مشاهدة و154.3K مشاهد فريد مع 544 تفاعل
+                        صافي، مع تغطية واسعة للأسواق العقارية الصاعدة.</p>
+                    <div class="portfolio-metrics">
+                        <span class="metric-chip"><i class="fa-solid fa-eye"></i> 277.5K مشاهدة</span>
+                        <span class="metric-chip"><i class="fa-solid fa-users"></i> 154.3K مشاهد</span>
+                    </div>
+                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20حملات%20فيروسية%20لمشروعي%20العقاري"
+                        target="_blank" class="portfolio-link">استفسر عن الخدمة <i
+                            class="fa-solid fa-arrow-left"></i></a>
+                </div>
+
+                <!-- Project 19 (حملات الرسائل والمحادثات العقارية) -->
+                <div class="portfolio-item" data-category="ads">
+                    <div class="portfolio-card-glow"></div>
+                    <div class="portfolio-image-wrapper">
+                        <img src="images/portfolio/18.png" alt="حملات الرسائل والمحادثات العقارية"
+                            class="portfolio-image">
+                    </div>
+                    <div class="portfolio-icon"><i class="fa-solid fa-comments"></i></div>
+                    <span class="portfolio-badge">حملات رسائل (Meta)</span>
+                    <h3>حملات توليد المحادثات والرسائل المباشرة</h3>
+                    <p>إدارة حملات رسائل مباشرة حققت 115 محادثة بتكلفة 11.84 ج.م فقط لكل محادثة، بالإضافة لحملات تفاعل
+                        حققت 24,125 عملية تفاعل بتكلفة 0.02 ج.م لكل تفاعل.</p>
+                    <div class="portfolio-metrics">
+                        <span class="metric-chip"><i class="fa-solid fa-message"></i> 115 محادثة</span>
+                        <span class="metric-chip"><i class="fa-solid fa-hand-holding-heart"></i> 24.1K تفاعل</span>
+                    </div>
+                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20حملات%20رسائل%20ومحادثات%20لتوليد%20عملاء"
+                        target="_blank" class="portfolio-link">استفسر عن الخدمة <i
+                            class="fa-solid fa-arrow-left"></i></a>
+                </div>
+
+                <!-- Project 20 (أداء الفيديو والريلز - تحليلات متقدمة) -->
+                <div class="portfolio-item" data-category="strategy">
+                    <div class="portfolio-card-glow"></div>
+                    <div class="portfolio-image-wrapper">
+                        <img src="images/portfolio/16.png" alt="تحليلات أداء الفيديو والريلز" class="portfolio-image">
+                    </div>
+                    <div class="portfolio-icon"><i class="fa-solid fa-video"></i></div>
+                    <span class="portfolio-badge">تحليل أداء الفيديو</span>
+                    <h3>تحليلات أداء الفيديو الإعلاني (Video Performance)</h3>
+                    <p>تحليل متقدم لأداء الفيديوهات الإعلانية مع تتبع مؤشرات الاحتفاظ ومعدل الجذب. تحقيق 740.8K+ مشاهدة
+                        فيديو بمعدل جذب 29% ومعدل احتفاظ 3.97% على إعلانات العقارات.</p>
+                    <div class="portfolio-metrics">
+                        <span class="metric-chip"><i class="fa-solid fa-play"></i> 740.8K مشاهدة</span>
+                        <span class="metric-chip"><i class="fa-solid fa-magnet"></i> 29% معدل جذب</span>
+                    </div>
+                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20تحليل%20أداء%20الفيديوهات%20الإعلانية%20لحملاتي"
+                        target="_blank" class="portfolio-link">استفسر عن الخدمة <i
+                            class="fa-solid fa-arrow-left"></i></a>
+                </div>
+
+                <!-- Project 21 (ريلز عالية الاحتفاظ والجذب) -->
+                <div class="portfolio-item" data-category="ads">
+                    <div class="portfolio-card-glow"></div>
+                    <div class="portfolio-image-wrapper">
+                        <img src="images/portfolio/20.png" alt="ريلز عالية الاحتفاظ والجذب" class="portfolio-image">
+                    </div>
+                    <div class="portfolio-icon"><i class="fa-solid fa-clapperboard"></i></div>
+                    <span class="portfolio-badge">ريلز عالية الأداء</span>
+                    <h3>ريلز عالية الاحتفاظ والجذب (High Retention Reels)</h3>
+                    <p>إنتاج وإدارة ريلز إعلانية بمعدلات جذب واحتفاظ استثنائية: فيديو حقق 68% معدل جذب و39.56% احتفاظ،
+                        وآخر بمعدل جذب 97% مع احتفاظ 24.93% لمدة 42 ثانية.</p>
+                    <div class="portfolio-metrics">
+                        <span class="metric-chip"><i class="fa-solid fa-arrow-trend-up"></i> 97% معدل جذب</span>
+                        <span class="metric-chip"><i class="fa-solid fa-clock"></i> 39.56% احتفاظ</span>
+                    </div>
+                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20إنتاج%20ريلز%20عالية%20الأداء%20لحملاتي"
+                        target="_blank" class="portfolio-link">استفسر عن الخدمة <i
+                            class="fa-solid fa-arrow-left"></i></a>
+                </div>
+
+                <!-- Project 22 (حملات ThruPlay والتوعية الشاملة) -->
+                <div class="portfolio-item" data-category="ads">
+                    <div class="portfolio-card-glow"></div>
+                    <div class="portfolio-image-wrapper">
+                        <img src="images/portfolio/27.png" alt="حملات ThruPlay والتوعية الشاملة"
+                            class="portfolio-image">
+                    </div>
+                    <div class="portfolio-icon"><i class="fa-solid fa-tower-broadcast"></i></div>
+                    <span class="portfolio-badge">حملات ThruPlay</span>
+                    <h3>حملات ThruPlay والتوعية الشاملة (Awareness)</h3>
+                    <p>إدارة حملات ThruPlay لشركة قلاع للاستثمار العقاري حققت 71.4K مشاهدة و13,823 مشاهدة كاملة بتكلفة
+                        0.04 ج.م فقط لكل ThruPlay مع وصول لـ 46,820 مشاهد فريد.</p>
+                    <div class="portfolio-metrics">
+                        <span class="metric-chip"><i class="fa-solid fa-play-circle"></i> 13.8K ThruPlay</span>
+                        <span class="metric-chip"><i class="fa-solid fa-coins"></i> 0.04 ج.م / ThruPlay</span>
+                    </div>
+                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20حملات%20توعية%20وThruPlay%20لمشروعي"
+                        target="_blank" class="portfolio-link">استفسر عن الخدمة <i
+                            class="fa-solid fa-arrow-left"></i></a>
+                </div>
+
+                <!-- Project 23 (حملات التوظيف العقارية) -->
+                <div class="portfolio-item" data-category="ads">
+                    <div class="portfolio-card-glow"></div>
+                    <div class="portfolio-image-wrapper">
+                        <img src="images/portfolio/29.png" alt="حملات التوظيف عبر السوشيال ميديا"
+                            class="portfolio-image">
+                    </div>
+                    <div class="portfolio-icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <span class="portfolio-badge">حملات توظيف</span>
+                    <h3>حملات التوظيف وبناء فرق المبيعات (Recruitment Ads)</h3>
+                    <p>حملات توظيف لشركة قلاع للتطوير العقاري حققت 11.5K مشاهدة و5.8K مشاهد فريد مع 71 تفاعل، لاستقطاب
+                        Sales Manager وSales Team Leader.</p>
+                    <div class="portfolio-metrics">
+                        <span class="metric-chip"><i class="fa-solid fa-briefcase"></i> 11.5K مشاهدة</span>
+                        <span class="metric-chip"><i class="fa-solid fa-users"></i> 5.8K مشاهد</span>
+                    </div>
+                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20حملات%20توظيف%20وجذب%20كفاءات%20لشركتي"
+                        target="_blank" class="portfolio-link">استفسر عن الخدمة <i
+                            class="fa-solid fa-arrow-left"></i></a>
+                </div>
+
+                <!-- Project 24 (حملات السكني المفروش) -->
+                <div class="portfolio-item" data-category="ads">
+                    <div class="portfolio-card-glow"></div>
+                    <div class="portfolio-image-wrapper">
+                        <img src="images/portfolio/30.png" alt="حملات السكني المفروش" class="portfolio-image">
+                    </div>
+                    <div class="portfolio-icon"><i class="fa-solid fa-couch"></i></div>
+                    <span class="portfolio-badge">حملات سكني مفروش</span>
+                    <h3>حملات السكني المفروش - محتوى إبداعي عالي التأثير</h3>
+                    <p>حملات إبداعية للسكني المفروش بأسيوط الجديدة حققت 44.8K مشاهدة و30K مشاهد فريد مع 308 تفاعل صافي
+                        ومعدل وصول إعلاني فاق المنشور النموذجي.</p>
+                    <div class="portfolio-metrics">
+                        <span class="metric-chip"><i class="fa-solid fa-eye"></i> 44.8K مشاهدة</span>
+                        <span class="metric-chip"><i class="fa-solid fa-hand-holding-heart"></i> 308 تفاعل</span>
+                    </div>
+                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20حملات%20إعلانية%20للسكني%20المفروش"
+                        target="_blank" class="portfolio-link">استفسر عن الخدمة <i
+                            class="fa-solid fa-arrow-left"></i></a>
+                </div>
+
+                <!-- Project 25 (حملة العرض الذهبي - توليد محادثات) -->
+                <div class="portfolio-item" data-category="ads">
+                    <div class="portfolio-card-glow"></div>
+                    <div class="portfolio-image-wrapper">
+                        <img src="images/portfolio/28.png" alt="حملة العرض الذهبي لتوليد المحادثات"
+                            class="portfolio-image">
+                    </div>
+                    <div class="portfolio-icon"><i class="fa-solid fa-gem"></i></div>
+                    <span class="portfolio-badge">حملات محادثات</span>
+                    <h3>حملة العرض الذهبي - توليد 163 محادثة مباشرة</h3>
+                    <p>حملة "العرض الذهبي" لقلاع للاستثمار العقاري حققت 53.4K مشاهدة و163 محادثة عبر الرسائل بتكلفة
+                        26.83 ج.م لكل محادثة مع 25.8K مشاهد فريد.</p>
+                    <div class="portfolio-metrics">
+                        <span class="metric-chip"><i class="fa-solid fa-comment-dots"></i> 163 محادثة</span>
+                        <span class="metric-chip"><i class="fa-solid fa-coins"></i> 26.83 ج.م / محادثة</span>
+                    </div>
+                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20حملات%20توليد%20محادثات%20لمشروعي%20العقاري"
+                        target="_blank" class="portfolio-link">استفسر عن الخدمة <i
+                            class="fa-solid fa-arrow-left"></i></a>
+                </div>
+
+                <!-- Project 26 (حملات المعارض العقارية) -->
+                <div class="portfolio-item" data-category="ads">
+                    <div class="portfolio-card-glow"></div>
+                    <div class="portfolio-image-wrapper">
+                        <img src="images/portfolio/25.png" alt="حملات المعارض العقارية" class="portfolio-image">
+                    </div>
+                    <div class="portfolio-icon"><i class="fa-solid fa-store"></i></div>
+                    <span class="portfolio-badge">حملات فعاليات</span>
+                    <h3>حملات المعارض والفعاليات العقارية (Event Marketing)</h3>
+                    <p>حملات ترويجية لمعرض قلاع - أكبر حدث عقاري على مستوى الصعيد، حققت 32.3K+ مشاهدة و52.3K مشاهدة
+                        إضافية عبر حملتين متتاليتين مع تغطية واسعة.</p>
+                    <div class="portfolio-metrics">
+                        <span class="metric-chip"><i class="fa-solid fa-eye"></i> 84.6K+ مشاهدة إجمالية</span>
+                        <span class="metric-chip"><i class="fa-solid fa-calendar-check"></i> تسويق فعاليات</span>
+                    </div>
+                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20تسويق%20معرض%20أو%20فعالية%20عقارية"
+                        target="_blank" class="portfolio-link">استفسر عن الخدمة <i
+                            class="fa-solid fa-arrow-left"></i></a>
                 </div>
             </div>
         </div>
@@ -2269,10 +2567,12 @@ html, body {
             <div class="cta-card reveal">
                 <div class="cta-bg-glow"></div>
                 <h2 class="cta-title">جاهز لتنمية أعمالك؟</h2>
-                <p class="cta-text">دعنا نتحدث عن أهدافك ونبني معاً استراتيجية تساعدك على جذب المزيد من العملاء وزيادة المبيعات وتحقيق نمو مستدام.</p>
-                
+                <p class="cta-text">دعنا نتحدث عن أهدافك ونبني معاً استراتيجية تساعدك على جذب المزيد من العملاء وزيادة
+                    المبيعات وتحقيق نمو مستدام.</p>
+
                 <div class="cta-actions">
-                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20مناقشة%20تنمية%20أعمالي" target="_blank" class="btn btn-primary cta-btn">
+                    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20مناقشة%20تنمية%20أعمالي"
+                        target="_blank" class="btn btn-primary cta-btn">
                         <i class="fa-brands fa-whatsapp"></i> ابدأ الآن عبر واتساب
                         <span class="btn-shine"></span>
                     </a>
@@ -2294,10 +2594,15 @@ html, body {
                     <p class="footer-desc">خبير التسويق الإلكتروني ونمو الأعمال</p>
                     <p class="footer-regions">خدمات احترافية للشركات في مصر ودول الخليج</p>
                     <div class="footer-socials">
-                        <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20مناقشة%20تنمية%20أعمالي" target="_blank" class="social-icon" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="https://www.linkedin.com/in/ahmed-gaber-mediabuyer" target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-                        <a href="https://www.facebook.com/0ahmed.media.buyer" target="_blank" class="social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/ahmed.media.buyer" target="_blank" class="social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20مناقشة%20تنمية%20أعمالي"
+                            target="_blank" class="social-icon" aria-label="WhatsApp"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.linkedin.com/in/ahmed-gaber-mediabuyer" target="_blank" class="social-icon"
+                            aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="https://www.facebook.com/0ahmed.media.buyer" target="_blank" class="social-icon"
+                            aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/ahmed.media.buyer" target="_blank" class="social-icon"
+                            aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
                 <div class="footer-links">
@@ -2318,7 +2623,8 @@ html, body {
     </footer>
 
     <!-- Floating Actions -->
-    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20مناقشة%20تنمية%20أعمالي" target="_blank" class="floating-whatsapp" id="floatingWhatsapp" aria-label="تواصل عبر واتساب">
+    <a href="https://wa.me/201020969108?text=مرحباً%20أحمد،%20أرغب%20في%20مناقشة%20تنمية%20أعمالي" target="_blank"
+        class="floating-whatsapp" id="floatingWhatsapp" aria-label="تواصل عبر واتساب">
         <div class="whatsapp-pulse"></div>
         <i class="fa-brands fa-whatsapp"></i>
     </a>
@@ -2335,247 +2641,261 @@ html, body {
 
     <!-- JavaScript (inlined) -->
     <script>
-    "use strict";
+        "use strict";
 
-    // Safe DOM helper
-    const $ = (sel, ctx = document) => ctx.querySelector(sel);
-    const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
+        // Safe DOM helper
+        const $ = (sel, ctx = document) => ctx.querySelector(sel);
+        const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
 
-    document.addEventListener("DOMContentLoaded", () => {
-        // Elements
-        const hamburger = $("#hamburger");
-        const navbar = $("#navbar");
-        const backToTop = $("#backToTop");
-        const scrollProgress = $("#scrollProgress");
-        const filterBtns = $$(".filter-btn");
-        const portfolioItems = $$(".portfolio-item");
+        document.addEventListener("DOMContentLoaded", () => {
+            // Elements
+            const hamburger = $("#hamburger");
+            const navbar = $("#navbar");
+            const backToTop = $("#backToTop");
+            const scrollProgress = $("#scrollProgress");
+            const filterBtns = $$(".filter-btn");
+            const portfolioItems = $$(".portfolio-item");
 
-        // Hamburger toggle (mobile)
-        const navLinks = $(".nav-links");
-        if (hamburger) {
-            hamburger.addEventListener("click", () => {
-                hamburger.classList.toggle("active");
-                document.body.classList.toggle("nav-open");
-                if (navLinks) navLinks.classList.toggle("active");
-            });
-
-            // Close menu when a nav link is clicked (mobile)
-            if (navLinks) {
-                $$(".nav-links a").forEach(a => {
-                    a.addEventListener('click', () => {
-                        navLinks.classList.remove('active');
-                        hamburger.classList.remove('active');
-                        document.body.classList.remove('nav-open');
-                    });
+            // Hamburger toggle (mobile)
+            const navLinks = $(".nav-links");
+            if (hamburger) {
+                hamburger.addEventListener("click", () => {
+                    hamburger.classList.toggle("active");
+                    document.body.classList.toggle("nav-open");
+                    if (navLinks) navLinks.classList.toggle("active");
                 });
-            }
-        }
 
-        // Scroll-related behaviors
-        const onScroll = () => {
-            const sc = window.scrollY || window.pageYOffset;
-
-            // Navbar scrolled state
-            if (navbar) {
-                if (sc > 60) navbar.classList.add("scrolled");
-                else navbar.classList.remove("scrolled");
-            }
-
-            // Back-to-top visibility
-            if (backToTop) {
-                if (sc > 400) backToTop.classList.add("visible");
-                else backToTop.classList.remove("visible");
-            }
-
-            // Scroll progress
-            if (scrollProgress) {
-                const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-                const pct = docHeight > 0 ? (sc / docHeight) * 100 : 0;
-                scrollProgress.style.width = pct + "%";
-            }
-
-            // Reveal on scroll (basic)
-            $$(".reveal").forEach(el => {
-                const rect = el.getBoundingClientRect();
-                if (rect.top < window.innerHeight - 80) el.classList.add("active");
-            });
-
-            // Active link highlighting on scroll
-            const scrollPos = sc + 150;
-            $$("section").forEach(sec => {
-                const top = sec.offsetTop;
-                const height = sec.offsetHeight;
-                const id = sec.getAttribute("id");
-
-                if (scrollPos >= top && scrollPos < top + height) {
+                // Close menu when a nav link is clicked (mobile)
+                if (navLinks) {
                     $$(".nav-links a").forEach(a => {
-                        a.classList.remove("active");
-                        if (a.getAttribute("href") === `#${id}`) {
-                            a.classList.add("active");
-                        }
+                        a.addEventListener('click', () => {
+                            navLinks.classList.remove('active');
+                            hamburger.classList.remove('active');
+                            document.body.classList.remove('nav-open');
+                        });
                     });
                 }
-            });
-        };
+            }
 
-        window.addEventListener("scroll", onScroll, { passive: true });
-        onScroll();
+            // Scroll-related behaviors
+            const onScroll = () => {
+                const sc = window.scrollY || window.pageYOffset;
 
-        // Back to top click
-        if (backToTop) {
-            backToTop.addEventListener("click", (e) => {
-                e.preventDefault();
-                window.scrollTo({ top: 0, behavior: "smooth" });
-            });
-        }
+                // Navbar scrolled state
+                if (navbar) {
+                    if (sc > 60) navbar.classList.add("scrolled");
+                    else navbar.classList.remove("scrolled");
+                }
 
-        // Initialize portfolio items with 'show' class
-        portfolioItems.forEach(item => item.classList.add("show"));
+                // Back-to-top visibility
+                if (backToTop) {
+                    if (sc > 400) backToTop.classList.add("visible");
+                    else backToTop.classList.remove("visible");
+                }
 
-        // Portfolio filter utilizing show and hidden CSS classes
-        if (filterBtns.length && portfolioItems.length) {
-            filterBtns.forEach(btn => {
-                btn.addEventListener("click", () => {
-                    const filter = btn.dataset.filter;
-                    filterBtns.forEach(b => b.classList.remove("active"));
-                    btn.classList.add("active");
+                // Scroll progress
+                if (scrollProgress) {
+                    const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+                    const pct = docHeight > 0 ? (sc / docHeight) * 100 : 0;
+                    scrollProgress.style.width = pct + "%";
+                }
 
-                    portfolioItems.forEach(item => {
-                        if (filter === "all" || item.dataset.category === filter) {
-                            item.classList.remove("hidden");
-                            item.classList.add("show");
-                        } else {
-                            item.classList.add("hidden");
-                            item.classList.remove("show");
-                        }
-                    });
+                // Reveal on scroll (basic)
+                $$(".reveal").forEach(el => {
+                    const rect = el.getBoundingClientRect();
+                    if (rect.top < window.innerHeight - 80) el.classList.add("active");
                 });
-            });
-        }
 
-        // Interactive Image Lightbox
-        const lightbox = $("#portfolioLightbox");
-        const lightboxImg = $("#lightboxImg");
-        const lightboxClose = $("#lightboxClose");
-        const portfolioImages = $$(".portfolio-image");
+                // Active link highlighting on scroll
+                const scrollPos = sc + 150;
+                $$("section").forEach(sec => {
+                    const top = sec.offsetTop;
+                    const height = sec.offsetHeight;
+                    const id = sec.getAttribute("id");
 
-        if (lightbox && lightboxImg && lightboxClose) {
-            portfolioImages.forEach(img => {
-                img.addEventListener("click", () => {
-                    const src = img.getAttribute("src");
-                    const alt = img.getAttribute("alt");
-                    if (src) {
-                        lightboxImg.setAttribute("src", src);
-                        lightboxImg.setAttribute("alt", alt || "");
-                        lightbox.classList.add("active");
-                        document.body.style.overflow = "hidden"; // Lock scroll
+                    if (scrollPos >= top && scrollPos < top + height) {
+                        $$(".nav-links a").forEach(a => {
+                            a.classList.remove("active");
+                            if (a.getAttribute("href") === `#${id}`) {
+                                a.classList.add("active");
+                            }
+                        });
                     }
                 });
-            });
-
-            const closeLightbox = () => {
-                lightbox.classList.remove("active");
-                document.body.style.overflow = ""; // Unlock scroll
             };
 
-            lightboxClose.addEventListener("click", closeLightbox);
-            lightbox.addEventListener("click", (e) => {
-                if (e.target === lightbox) {
-                    closeLightbox();
-                }
-            });
+            window.addEventListener("scroll", onScroll, { passive: true });
+            onScroll();
 
-            document.addEventListener("keydown", (e) => {
-                if (e.key === "Escape" && lightbox.classList.contains("active")) {
-                    closeLightbox();
-                }
-            });
-        }
-
-        // Floating Gold Particles Animation on Canvas
-        const canvas = $("#hero-particles");
-        if (canvas) {
-            const ctx = canvas.getContext("2d");
-            let particles = [];
-            let animationFrameId;
-
-            const resizeCanvas = () => {
-                const rect = canvas.getBoundingClientRect();
-                canvas.width = rect.width;
-                canvas.height = rect.height;
-            };
-
-            class Particle {
-                constructor() {
-                    this.x = Math.random() * canvas.width;
-                    this.y = Math.random() * canvas.height;
-                    this.size = Math.random() * 2 + 0.5;
-                    this.speedX = (Math.random() - 0.5) * 0.4;
-                    this.speedY = (Math.random() - 0.5) * 0.4;
-                    this.color = `rgba(212, 175, 55, ${Math.random() * 0.2 + 0.05})`;
-                }
-                update() {
-                    this.x += this.speedX;
-                    this.y += this.speedY;
-
-                    if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
-                    if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
-                }
-                draw() {
-                    ctx.fillStyle = this.color;
-                    ctx.beginPath();
-                    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-                    ctx.fill();
-                }
+            // Back to top click
+            if (backToTop) {
+                backToTop.addEventListener("click", (e) => {
+                    e.preventDefault();
+                    window.scrollTo({ top: 0, behavior: "smooth" });
+                });
             }
 
-            const initParticles = () => {
-                particles = [];
-                const count = Math.min(Math.floor((canvas.width * canvas.height) / 15000), 100);
-                for (let i = 0; i < count; i++) {
-                    particles.push(new Particle());
-                }
-            };
+            // Initialize portfolio items with 'show' class
+            portfolioItems.forEach(item => item.classList.add("show"));
 
-            const animate = () => {
-                ctx.clearRect(0, 0, canvas.width, canvas.height);
-                particles.forEach(p => {
-                    p.update();
-                    p.draw();
+            // Portfolio filter utilizing show and hidden CSS classes
+            if (filterBtns.length && portfolioItems.length) {
+                filterBtns.forEach(btn => {
+                    btn.addEventListener("click", () => {
+                        const filter = btn.dataset.filter;
+                        filterBtns.forEach(b => b.classList.remove("active"));
+                        btn.classList.add("active");
+
+                        portfolioItems.forEach(item => {
+                            if (filter === "all" || item.dataset.category === filter) {
+                                item.classList.remove("hidden");
+                                item.classList.add("show");
+                            } else {
+                                item.classList.add("hidden");
+                                item.classList.remove("show");
+                            }
+                        });
+                    });
                 });
-                animationFrameId = requestAnimationFrame(animate);
-            };
+            }
 
-            window.addEventListener("resize", () => {
-                cancelAnimationFrame(animationFrameId);
+            // Interactive Image Lightbox
+            const lightbox = $("#portfolioLightbox");
+            const lightboxImg = $("#lightboxImg");
+            const lightboxClose = $("#lightboxClose");
+            const portfolioImages = $$(".portfolio-image");
+
+            if (lightbox && lightboxImg && lightboxClose) {
+                portfolioImages.forEach(img => {
+                    img.addEventListener("click", () => {
+                        const src = img.getAttribute("src");
+                        const alt = img.getAttribute("alt");
+                        if (src) {
+                            lightboxImg.setAttribute("src", src);
+                            lightboxImg.setAttribute("alt", alt || "");
+                            lightbox.classList.add("active");
+                            document.body.style.overflow = "hidden"; // Lock scroll
+                        }
+                    });
+                });
+
+                const closeLightbox = () => {
+                    lightbox.classList.remove("active");
+                    document.body.style.overflow = ""; // Unlock scroll
+                };
+
+                lightboxClose.addEventListener("click", closeLightbox);
+                lightbox.addEventListener("click", (e) => {
+                    if (e.target === lightbox) {
+                        closeLightbox();
+                    }
+                });
+
+                document.addEventListener("keydown", (e) => {
+                    if (e.key === "Escape" && lightbox.classList.contains("active")) {
+                        closeLightbox();
+                    }
+                });
+            }
+
+            // Floating Gold Particles Animation on Canvas
+            const canvas = $("#hero-particles");
+            if (canvas) {
+                const ctx = canvas.getContext("2d");
+                let particles = [];
+                let animationFrameId;
+
+                const resizeCanvas = () => {
+                    const rect = canvas.getBoundingClientRect();
+                    canvas.width = rect.width;
+                    canvas.height = rect.height;
+                };
+
+                class Particle {
+                    constructor() {
+                        this.x = Math.random() * canvas.width;
+                        this.y = Math.random() * canvas.height;
+                        this.size = Math.random() * 2 + 0.5;
+                        this.speedX = (Math.random() - 0.5) * 0.4;
+                        this.speedY = (Math.random() - 0.5) * 0.4;
+                        this.color = `rgba(212, 175, 55, ${Math.random() * 0.2 + 0.05})`;
+                    }
+                    update() {
+                        this.x += this.speedX;
+                        this.y += this.speedY;
+
+                        if (this.x < 0 || this.x > canvas.width) this.speedX *= -1;
+                        if (this.y < 0 || this.y > canvas.height) this.speedY *= -1;
+                    }
+                    draw() {
+                        ctx.fillStyle = this.color;
+                        ctx.beginPath();
+                        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                        ctx.fill();
+                    }
+                }
+
+                const initParticles = () => {
+                    particles = [];
+                    const count = Math.min(Math.floor((canvas.width * canvas.height) / 15000), 100);
+                    for (let i = 0; i < count; i++) {
+                        particles.push(new Particle());
+                    }
+                };
+
+                const animate = () => {
+                    ctx.clearRect(0, 0, canvas.width, canvas.height);
+                    particles.forEach(p => {
+                        p.update();
+                        p.draw();
+                    });
+                    animationFrameId = requestAnimationFrame(animate);
+                };
+
+                window.addEventListener("resize", () => {
+                    cancelAnimationFrame(animationFrameId);
+                    resizeCanvas();
+                    initParticles();
+                    animate();
+                });
+
                 resizeCanvas();
                 initParticles();
                 animate();
-            });
-
-            resizeCanvas();
-            initParticles();
-            animate();
-        }
-
-        // Defensive: ensure images have alt and not broken silently + lazy-load images
-        $$("img").forEach(img => {
-            if (!img.hasAttribute('alt') || img.alt.trim() === '') img.alt = 'image';
-            img.addEventListener('error', () => { img.style.opacity = '0.6'; });
-            if (!img.hasAttribute('loading')) {
-                if (!img.classList.contains('logo-img') && !img.classList.contains('footer-logo')) img.loading = 'lazy';
             }
+
+            // Defensive: ensure images have alt and not broken silently + lazy-load images
+            $$("img").forEach(img => {
+                if (!img.hasAttribute('alt') || img.alt.trim() === '') img.alt = 'image';
+                img.addEventListener('error', () => { img.style.opacity = '0.6'; });
+                if (!img.hasAttribute('loading')) {
+                    if (!img.classList.contains('logo-img') && !img.classList.contains('footer-logo')) img.loading = 'lazy';
+                }
+            });
         });
-    });
     </script>
 
     <noscript>
         <style>
-            body { visibility: visible !important; }
-            .reveal { opacity: 1 !important; transform: none !important; }
-            .noscript-warning { display: block !important; padding: 20px; background: #222; color: #fff; text-align: center; }
+            body {
+                visibility: visible !important;
+            }
+
+            .reveal {
+                opacity: 1 !important;
+                transform: none !important;
+            }
+
+            .noscript-warning {
+                display: block !important;
+                padding: 20px;
+                background: #222;
+                color: #fff;
+                text-align: center;
+            }
         </style>
         <div class="noscript-warning">للحصول على أفضل تجربة، فعّل جافاسكربت في متصفحك.</div>
     </noscript>
 </body>
+
 </html>
