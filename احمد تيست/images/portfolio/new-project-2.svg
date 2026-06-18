@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <defs>
+    <linearGradient id="g2" x1="0" x2="1">
+      <stop offset="0%" stop-color="#0b5a6b"/>
+      <stop offset="100%" stop-color="#063b48"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#g2)" rx="20"/>
+  <g transform="translate(60,60)" fill="#f7e7ce" font-family="Tajawal, sans-serif">
+    <rect x="0" y="0" width="1080" height="680" rx="16" fill="rgba(0,0,0,0.12)"/>
+    <text x="1020" y="120" font-size="48" text-anchor="end" font-weight="700">مشروع جديد 2</text>
+    <text x="1020" y="180" font-size="28" text-anchor="end" fill="#d4af37">خدمة: حملات وتسويق</text>
+  </g>
+</svg>
